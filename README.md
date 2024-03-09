@@ -1,0 +1,2 @@
+# BHBot
+Brawlhalla Bot
