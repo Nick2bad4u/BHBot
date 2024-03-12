@@ -9,6 +9,12 @@ Heavily inspired by [BrawlhallaEZ](https://github.com/jamunano/BrawlhallaEZ)
 **WARNING:** Bot was initially made for personal use. It should not, but still can cause some unexpected consequences, including making purchases from mallhalla (with in-game currencies). Developer is
 not responsible for any harm the program may case. Use at your own risk
 
+[Virus Total Scan](https://www.virustotal.com/gui/file/af110c1886ba1a24c1122cfc527d0183a4650bb933a35d44c2389ed1d585b489?nocache=1)
+![Results](https://github.com/Nick2bad4u/BHBot/assets/20943337/92bb7f30-e7ae-4e85-a13b-95a6530eeaf9)
+
+[Submitted to Microsoft as a False Positive for Windows Defender, coming back clean as of 3-12-24.](https://www.microsoft.com/en-us/wdsi/submission/e9889ce6-6dc9-44bc-b7ba-c5759544b2a4)
+![Windows Defender Results](https://i.gyazo.com/acbabb1aa492c86852e5ca2027044992.png)
+
 (it should work fine tho, I tested it for >600 hours at this point)
 
 # Installation
