@@ -47,8 +47,8 @@ Bot _should_ auto-update as soon as any updates are released according to select
 Should be pretty straightforward. Just select needed settings and click "Start" :)
 
 # Limitations
-- Bot requires "Collapse crossovers" to be set to Yes. If you think it should automatically set it to be so, please [open an issue](https://github.com/sovamorco/bhbot/issues)
-- Bot requires ingame language to be set to English. If you think it should automatically set it to be so, please [open an issue](https://github.com/sovamorco/bhbot/issues)
+- Bot requires "Collapse crossovers" to be set to Yes. 
+- Bot requires ingame language to be set to English.
 
 # Internal stuff
 You can always check the code, but basically bot uses windows SendMessage API to send inputs directly to Brawlhalla window and pixel detection to detect states and
