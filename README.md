@@ -26,7 +26,7 @@ not responsible for any harm the program may case. Use at your own risk
 (it should work fine tho, I tested it for >600 hours at this point)
 
 # Installation
-Latest release can always be downloaded [here](https://sovamor.co/bhbot)
+Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHBot/releases/tag/BHBOT)
 
 Bot _should_ auto-update as soon as any updates are released according to selected branch in settings
 
