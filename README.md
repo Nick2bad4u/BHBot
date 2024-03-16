@@ -1,6 +1,6 @@
 # BHBot
 
-Edit: USA users that want to use stealth mode, please do the following (otherwise everytime the "earn free rewards" pops up it will stop the but until cleared)
+Edit: USA users that want to use stealth mode, please do the following (otherwise everytime the "earn free rewards" pops up it will stop the bot until cleared)
 
 1. %localappdata%\BHBot - Navigate to this folder
 2. Edit the file "bhbot.cfg" and change the following from:
