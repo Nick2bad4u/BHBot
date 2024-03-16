@@ -1,5 +1,13 @@
 # BHBot
 
+Edit: USA users that want to use stealth mode, please do the following (otherwise everytime the "earn free rewards" pops up it will stop the but until cleared)
+
+1. %localappdata%\BHBot - Navigate to this folder
+2. Edit the file "bhbot.cfg" and change the following from:
+`"mute": true` to `"mute": false`
+3. Save file.
+4. If you change the settings in the bot again, you need to re-apply this. I plan to make a fix.
+
 [Этот файл доступен на Русском языке](README_RU.md)
 
 Gold/XP farming bot for Brawlhalla
