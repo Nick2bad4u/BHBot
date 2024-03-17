@@ -79,7 +79,6 @@ setuptools==69.2.0
 six==1.16.0
 soupsieve==2.5
 stack-data==0.6.3
-stevedore==5.2.0
 tinycss2==1.2.1
 tornado==6.4
 traitlets==5.14.2
