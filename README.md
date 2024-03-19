@@ -1,3 +1,7 @@
+[![Semgrep](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml)
+[![Upload Python Package](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml)
+[![CodeQL](https://github.com/Nick2bad4u/BHBot/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/github-code-scanning/codeql)
+[![Bandit](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml)
 # **BHBot**
 
 Edit: USA users that want to use stealth mode, please do the following (otherwise everytime the "earn free rewards" pops up it will stop the bot until cleared)
