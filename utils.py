@@ -328,7 +328,7 @@ def format_time(seconds):
 
 def get_rotation():
     try:
-        res = requests.get('https://sovamor.co/bhbot/rotation').json()
+        res = requests.get('https://sovamor.co/bhbot/rotation', timeout=5).json()
         return [character.lower() for character in res.get('rotation')]
     except Exception as e:
         logger.warning('rotation_error', e)
@@ -337,7 +337,7 @@ def get_rotation():
 
 def get_menu_pixels():
     try:
-        res = requests.get('https://sovamor.co/bhbot/menu_pixels').json()
+        res = requests.get('https://sovamor.co/bhbot/menu_pixels', timeout=5).json()
         return {
             k: {
                 inner_k: tuple(x if not isinstance(x, list) else tuple(x) for x in inner_v) for inner_k, inner_v in v.items()
