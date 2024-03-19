@@ -38,6 +38,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
+          use-installer: true
 
       - name: Run Pysa
         uses: facebook/pysa-action@f46a63777e59268613bd6e2ff4e29f144ca9e88b
