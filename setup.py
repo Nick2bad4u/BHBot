@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='BHBot-master',
+    name='BHBot',
     version='V1.1',
     packages=[''],
     url='https://github.com/Nick2bad4u/BHBot',
