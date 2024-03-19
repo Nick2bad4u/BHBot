@@ -35,7 +35,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
+            use-installer: true
+            submodules: true
 
       - name: Run Pyre
         uses: facebook/pyre-action@60697a7858f7cc8470d8cc494a3cf2ad6b06560d
