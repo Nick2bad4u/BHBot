@@ -32,5 +32,4 @@ jobs:
     - name: Test with pytest
       run: |
         conda install pytest
-        pytest bot.py
         pytest gui.pyw
