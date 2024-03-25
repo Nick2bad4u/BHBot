@@ -1,7 +1,7 @@
 name: bhbot-environment
 
 dependencies:
-  - pip:
+    - pip
     - altgraph
     - appdirs
     - asttokens
