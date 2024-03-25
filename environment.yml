@@ -36,6 +36,7 @@ dependencies:
     - Jinja2
     - jsonschema
     - jsonschema-specifications
+    - jupyter
     - jupyter_client
     - jupyter_core
     - jupyterlab_pygments
