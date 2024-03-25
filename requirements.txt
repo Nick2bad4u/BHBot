@@ -40,7 +40,7 @@ MarkupSafe==2.1.5
 matplotlib-inline==0.1.6
 mistune==3.0.2
 nbclient==0.10.0
-nbconvert==7.16.2
+nbconvert==7.16.3
 nbformat==5.10.3
 packaging==24.0
 pandocfilters==1.5.1
