@@ -9,19 +9,6 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      
-  - package-ecosystem: "composer"
-    directory: "/"
-    schedule:
-      interval: "daily"
     allow:
       # Allow both direct and indirect updates for all packages
       - dependency-type: "all"
-
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    allow:
-      # Django and any packages starting "django"
-        dependency-type: "all"
