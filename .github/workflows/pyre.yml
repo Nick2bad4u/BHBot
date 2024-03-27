@@ -12,6 +12,7 @@
 # to developers as they write code.
 #
 # See https://pyre-check.org
+# check updates here https://github.com/facebook/pyre-action/blob/main/action.yml
 
 name: Pyre
 
