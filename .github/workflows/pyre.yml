@@ -39,7 +39,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run Pyre
-         uses: nick2bad4u/pyre-action@7920815
+         uses: nick2bad4u/pyre-action
         with:
           # To customize these inputs:
           # See https://github.com/facebook/pyre-action#inputs
