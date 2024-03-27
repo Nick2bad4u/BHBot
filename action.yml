@@ -16,7 +16,7 @@ inputs:
     description: Use nightly (unstable) version of Pyre
     required: false
     type: boolean
-    default: false
+    default: true
   version:
     description: Version of pyre-check to be used. Default is latest.
     default: latest
@@ -26,7 +26,7 @@ runs:
   using: "composite"
   steps:
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v4
       with:
         python-version: '3.11'
 
@@ -94,7 +94,7 @@ runs:
 
     - name: Saving results in SARIF
       if: always()
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: SARIF Results
         path: ${{inputs.repo-directory}}/sarif.json
