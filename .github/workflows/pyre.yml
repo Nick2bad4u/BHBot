@@ -37,7 +37,7 @@ jobs:
         with:
           submodules: true
       - name: Run Pyre
-        uses: nick2bad4u/BHBot@56b61436a3d4eadcaea61df19915e304155d6a4e
+        uses: nick2bad4u/BHBot@36f41ae29aa7f22e89f972a17d7d49fbc9f7b913
         with:
           # To customize these inputs:
           # See https://github.com/facebook/pyre-action#inputs
