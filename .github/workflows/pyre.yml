@@ -36,7 +36,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-          python-version: '3.11'
 
       - name: Run Pyre
         - uses: facebook/pyre-action
