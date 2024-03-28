@@ -41,7 +41,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run Pysa
-        uses: Nick2bad4u/pysa-action@9fd555b7f676f98290ed6836abd1487992fcdf88
+        uses: Nick2bad4u/pysa-action@ddb64125a757981d0a842a62fdad56025eeb43d2
         with:
           # To customize these inputs:
           # See https://github.com/facebook/pysa-action#inputs
