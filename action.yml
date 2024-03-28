@@ -6,17 +6,17 @@ branding:
   color: 'orange'
 
 inputs:
-  repo-directory:
+  repo-directory: ./
     description: Path to the python source code you want to type check. If you want to type check the root of your repo, use './'. A .pyre_configuration file should exist here, if not, a default configuration will be used.
     required: true
-  requirements-path:
+  requirements-path: ./
     description: Path to requirements file, relative to `repo-directory`, to look for dependencies.
     required: false
   use-nightly:
     description: Use nightly (unstable) version of Pyre
     required: false
     type: boolean
-    default: true
+    default: false
   version:
     description: Version of pyre-check to be used. Default is latest.
     default: latest
