@@ -48,4 +48,4 @@ jobs:
           repo-directory: './'
           requirements-path: 'requirements.txt'
           infer-types: true
-          include-default-sapp-filters: true
+          include-default-sapp-filters: false
