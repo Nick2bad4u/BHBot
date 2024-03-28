@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-          python-version: '3.11'
+          python-version: '3.11.8'
 
       - name: Run Pysa
         uses: Nick2bad4u/pysa-action@ddb64125a757981d0a842a62fdad56025eeb43d2
