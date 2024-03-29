@@ -18,7 +18,7 @@ jobs:
       contents: read # Used to checkout a private repository by actions/checkout.
       actions: read # Required for private repositories to upload sarif files. GitHub Advanced Security licenses are required.
       id-token: write # Used for keyless authentication to Endor Labs
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
