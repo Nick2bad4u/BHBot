@@ -48,7 +48,7 @@ parso==0.8.3
 pbr==6.0.0
 pefile==2023.2.7
 pickleshare==0.7.5
-pillow==10.2.0
+pillow==10.3.0
 pipreqs==0.5.0
 platformdirs==4.2.0
 prompt-toolkit==3.0.43
