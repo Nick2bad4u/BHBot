@@ -20,6 +20,9 @@ on:
   schedule:
     - cron: '27 9 * * 0'
 
+permissions:
+  contents: read
+
 jobs:
   bandit:
     permissions:
@@ -29,7 +32,12 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Harden Runner
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Bandit Scan
         uses: shundor/python-bandit-scan@9cc5aa4a006482b8a7f91134412df6772dbda22c
         with: # optional arguments
