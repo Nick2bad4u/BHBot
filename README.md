@@ -14,10 +14,9 @@
 [![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
 [![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
 
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
-
+remote_theme: pages-themes/midnight@v0.2.0
+title: Brawlhalla BH Bot
+description: Brawlhalla Bot Page
 # **BHBot**
 
 [Latest Release](https://github.com/Nick2bad4u/BHBot/releases/tag/BHBOT)
