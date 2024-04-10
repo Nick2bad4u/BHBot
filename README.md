@@ -14,7 +14,7 @@
 [![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
 [![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
 
-remote_theme: pages-themes/midnight@v0.2.0
+theme: jekyll-theme-midnight
 title: Brawlhalla BH Bot
 description: Brawlhalla Bot Page
 # **BHBot**
