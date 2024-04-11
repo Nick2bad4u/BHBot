@@ -516,7 +516,7 @@ class BrawlhallaBot:
     def setup_lobby(self):
         # noinspection PyTypeChecker
         steps = [self.open_settings] + \
-                [self.virtual_input.right] * 10 + \
+                [self.virtual_input.right] * 8 + \
                 [self.virtual_input.down] * 3 + \
                 [self.virtual_input.left] * (2 - self.duration) + \
                 [self.virtual_input.right] * (self.duration - 2) + \
