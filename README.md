@@ -16,7 +16,7 @@
 
 # **BHBot**
 
-[Latest Release](https://github.com/Nick2bad4u/BHBot/releases/tag/BHBOT)
+[Latest Release](https://github.com/Nick2bad4u/BHBot/releases)
 
 Edit: USA users that want to use stealth mode, please do the following (otherwise everytime the "earn free rewards" pops up it will stop the bot until cleared)
 
