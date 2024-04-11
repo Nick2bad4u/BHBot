@@ -137,7 +137,7 @@ class GUIConfig:
             self.window['auto_stop_frequency'].update(disabled=True)
             self.window['auto_stop_duration'].update(disabled=True)
         if self.window['stealth'].get():
-            self.window['mute'].update(True, disabled=True)
+            self.window['mute'].update(False, disabled=False)
         else:
             self.window['mute'].update(disabled=False)
 
