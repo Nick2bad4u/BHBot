@@ -1,4 +1,5 @@
 # **BHBot**
+
 #### **Gold/XP farming bot for Brawlhalla**
 
 [![Semgrep](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml)
@@ -17,10 +18,12 @@
 [![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
 [![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
 
-- **[Latest Release](https://github.com/Nick2bad4u/BHBot/releases)** - Download Python (Source Code) or Compiled EXE version for Windows here. 
+- **[Latest Release](https://github.com/Nick2bad4u/BHBot/releases)** - Download Python (Source Code) or Compiled EXE version for Windows here.
+
 ###### (Looking for a Mac user to compile it into a .DMG file, if you know any or would be willing to do this, let me know.)
 
-**USA** users that want to use stealth mode, please do the following: (otherwise everytime the *"earn free rewards"* pops up it will stop the bot until cleared)
+**USA** users that want to use stealth mode, please do the following: (otherwise everytime the _"earn free rewards"_ pops up it will stop the bot until cleared)
+
 - You need to go into the bot settings and unselect "mute" if you are using stealth mode in the USA.
 - Manually mute the bot via Windows Volume Mixer
 
@@ -62,5 +65,5 @@ Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHB
 
 - You can always check the code, but basically the bot uses Windows SendMessage API to send inputs directly to a Brawlhalla window with pixel detection to detect states of the game and then decide what to do at any given point - depending on mode selected
 
-- You can use BrawlhallaBot class directly or write your own wrapper for it. 
+- You can use BrawlhallaBot class directly or write your own wrapper for it.
 - It is completely independent and gui.py is just a PySimpleGUI graphical wrapper
