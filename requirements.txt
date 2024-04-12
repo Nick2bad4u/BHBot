@@ -73,7 +73,7 @@ regex==2023.12.25
 requests==2.31.0
 rpds-py==0.18.0
 rsa==4.9
-setuptools==69.2.0
+setuptools==69.4.0
 six==1.16.0
 soupsieve==2.5
 stack-data==0.6.3
