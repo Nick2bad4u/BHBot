@@ -88,4 +88,4 @@ whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.9
 zope.event==5.0
-zope.interface==6.2
+zope.interface==6.3
