@@ -3,9 +3,9 @@ from abstract_mode import Mode
 
 class FastLvl(Mode):
     name = {
-        'default': 'Leveling up characters closest to next level',
-        'Русский': 'Повышение общего уровня',
-        'English': 'Leveling up characters closest to next level',
+        "default": "Leveling up characters closest to next level",
+        "Русский": "Повышение общего уровня",
+        "English": "Leveling up characters closest to next level",
     }
     character_selection_enabled = False
 
@@ -18,4 +18,6 @@ class FastLvl(Mode):
 
     @property
     def next_character(self):
-        return sorted(self.bot.unlocked_characters, key=lambda char: char.xp_to_next_level)[0]
+        return sorted(
+            self.bot.unlocked_characters, key=lambda char: char.xp_to_next_level
+        )[0]

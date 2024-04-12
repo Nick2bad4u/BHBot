@@ -26,5 +26,7 @@ class Mode(metaclass=ABCMeta):
         if isinstance(cls.name, str):
             return cls.name  # Shouldn't be used, here for backwards compatibility
         elif isinstance(cls.name, dict):
-            return cls.name.get(global_settings.language_name, cls.name.get('default', cls.__name__))
+            return cls.name.get(
+                global_settings.language_name, cls.name.get("default", cls.__name__)
+            )
         return cls.__name__

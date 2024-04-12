@@ -3,9 +3,9 @@ from abstract_mode import Mode
 
 class PowerLvl(Mode):
     name = {
-        'default': 'Leveling up one character',
-        'Русский': 'Повышение персонажа',
-        'English': 'Leveling up one character',
+        "default": "Leveling up one character",
+        "Русский": "Повышение персонажа",
+        "English": "Leveling up one character",
     }
 
     def __init__(self, *args, **kwargs):
@@ -17,4 +17,9 @@ class PowerLvl(Mode):
 
     @property
     def next_character(self):
-        return next(filter(lambda x: x.name == self.bot.config.character.lower(), self.bot.characters))
+        return next(
+            filter(
+                lambda x: x.name == self.bot.config.character.lower(),
+                self.bot.characters,
+            )
+        )

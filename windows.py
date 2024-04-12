@@ -41,7 +41,7 @@ def get_window(title):
 
 class SteamClient:
     _WIN_REG_SHELL = (winreg.HKEY_CLASSES_ROOT, r"steam\Shell\Open\Command")
-    _PROCESS_NAME = 'steam.exe'
+    _PROCESS_NAME = "steam.exe"
 
     def __init__(self):
         self.path = self.find_exe()
@@ -72,7 +72,7 @@ class SteamClient:
         shell_reg_value = self.__search_registry_for_run_cmd(*self._WIN_REG_SHELL)
         if shell_reg_value is None:
             return None
-        reg = re.compile("\"(.*?)\"")
+        reg = re.compile('"(.*?)"')
         return reg.search(shell_reg_value).groups()[0]
 
     def find_exe(self):
@@ -92,7 +92,9 @@ class BrawlhallaProcess:
 
     @classmethod
     def find(cls):
-        res = get_window('Brawlhalla.exe') or get_window('BrawlhallaGame.exe')  # support for beta
+        res = get_window("Brawlhalla.exe") or get_window(
+            "BrawlhallaGame.exe"
+        )  # support for beta
         if not res:
             return None
         return cls(*res)
@@ -106,7 +108,7 @@ class BrawlhallaProcess:
     def kill(self):
         while self.process.is_running():
             self.process.kill()
-            sleep(.5)
+            sleep(0.5)
 
     def get_window_rect(self):
         return win32gui.GetWindowRect(self.window)
@@ -126,21 +128,46 @@ class BrawlhallaProcess:
     def resize(self):
         window_size = self.get_window_size()
         client_size = self.get_client_size()
-        logger.debug('resize', *window_size, *client_size, *Sg.Window.get_screen_size())
+        logger.debug("resize", *window_size, *client_size, *Sg.Window.get_screen_size())
         w_border = window_size[0] - client_size[0]
         h_border = window_size[1] - client_size[1]
-        while self.get_client_size() != (1920, 1080):  # getwindowsize or getclientsize or setwindowpos or something else is weird so it sometimes doesnt work first try
-            win32gui.SetWindowPos(self.window, 0, 0, 0, 1920 + w_border, 1080 + h_border, win32con.SWP_NOZORDER)
+        while self.get_client_size() != (
+            1920,
+            1080,
+        ):  # getwindowsize or getclientsize or setwindowpos or something else is weird so it sometimes doesnt work first try
+            win32gui.SetWindowPos(
+                self.window,
+                0,
+                0,
+                0,
+                1920 + w_border,
+                1080 + h_border,
+                win32con.SWP_NOZORDER,
+            )
 
     def move_off_screen(self):
-        logger.debug('move_offscreen')
+        logger.debug("move_offscreen")
         w, h = Sg.Window.get_screen_size()
-        win32gui.SetWindowPos(self.window, 0, w * 4, h * 4, 0, 0, win32con.SWP_NOSIZE | win32con.SWP_NOZORDER)
+        win32gui.SetWindowPos(
+            self.window,
+            0,
+            w * 4,
+            h * 4,
+            0,
+            0,
+            win32con.SWP_NOSIZE | win32con.SWP_NOZORDER,
+        )
 
     def make_transparent(self):
         style = win32gui.GetWindowLong(self.window, win32con.GWL_EXSTYLE)
         win32gui.ShowWindow(self.window, win32con.SW_HIDE)
-        style |= win32con.WS_EX_COMPOSITED | win32con.WS_EX_LAYERED | win32con.WS_EX_TRANSPARENT | win32con.WS_EX_TOOLWINDOW | win32con.WS_EX_NOACTIVATE
+        style |= (
+            win32con.WS_EX_COMPOSITED
+            | win32con.WS_EX_LAYERED
+            | win32con.WS_EX_TRANSPARENT
+            | win32con.WS_EX_TOOLWINDOW
+            | win32con.WS_EX_NOACTIVATE
+        )
         style &= ~win32con.WS_EX_APPWINDOW
         win32gui.SetWindowLong(self.window, win32con.GWL_EXSTYLE, style)
         sleep(1)
@@ -153,6 +180,7 @@ class BrawlhallaProcess:
 
     def make_screenshot(self):
         import win32ui
+
         w, h = self.get_client_size()
 
         window_dc = win32gui.GetWindowDC(self.window)
@@ -169,7 +197,15 @@ class BrawlhallaProcess:
         bmpinfo = save_bit_map.GetInfo()
         bmpstr = save_bit_map.GetBitmapBits(True)
 
-        im = Image.frombuffer('RGB', (bmpinfo['bmWidth'], bmpinfo['bmHeight']), bmpstr, 'raw', 'BGRX', 0, 1)
+        im = Image.frombuffer(
+            "RGB",
+            (bmpinfo["bmWidth"], bmpinfo["bmHeight"]),
+            bmpstr,
+            "raw",
+            "BGRX",
+            0,
+            1,
+        )
 
         win32gui.DeleteObject(save_bit_map.GetHandle())
         save_dc.DeleteDC()
@@ -178,14 +214,16 @@ class BrawlhallaProcess:
         return im
 
     def set_low_priority(self):
-        handle = win32api.OpenProcess(win32con.PROCESS_SET_INFORMATION, True, self.process.pid)
+        handle = win32api.OpenProcess(
+            win32con.PROCESS_SET_INFORMATION, True, self.process.pid
+        )
         win32process.SetPriorityClass(handle, BELOW_NORMAL_PRIORITY_CLASS)
         win32api.CloseHandle(handle)
 
 
 class Singleton:
     def __init__(self):
-        res = get_window('BHBot.exe')
+        res = get_window("BHBot.exe")
         if res:
             window, _ = res
             self.set_focus(window)

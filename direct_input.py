@@ -28,7 +28,7 @@ class VirtualInput:
     def ReleaseKey(self, hexCode):
         win32gui.SendMessage(self.brawlhalla.window, win32con.WM_KEYUP, hexCode)
 
-    def press_key(self, *key_codes, delay=.05):
+    def press_key(self, *key_codes, delay=0.05):
         for key_code in key_codes:
             self.PressKey(key_code)
         sleep(delay)
@@ -38,7 +38,7 @@ class VirtualInput:
     def release_keys(self):
         for key in self.keys:
             self.ReleaseKey(self.keys[key])
-            sleep(.05)
+            sleep(0.05)
 
     def up(self, *args, **kwargs):
         self.press_key(self.hotkeys.up, *args, **kwargs)
@@ -74,21 +74,31 @@ class VirtualInput:
         self.press_key(self.hotkeys.enter, *args, **kwargs)
 
     def fight(self):
-        move_keys = [self.hotkeys.left, self.hotkeys.up, self.hotkeys.down, self.hotkeys.right]
-        fight_keys = [self.hotkeys.throw, self.hotkeys.quick, self.hotkeys.heavy, self.hotkeys.dodge]
-        self.press_key(choice(move_keys), choice(fight_keys), delay=.2)
+        move_keys = [
+            self.hotkeys.left,
+            self.hotkeys.up,
+            self.hotkeys.down,
+            self.hotkeys.right,
+        ]
+        fight_keys = [
+            self.hotkeys.throw,
+            self.hotkeys.quick,
+            self.hotkeys.heavy,
+            self.hotkeys.dodge,
+        ]
+        self.press_key(choice(move_keys), choice(fight_keys), delay=0.2)
 
 
 class Hotkeys:
     def __init__(self, hotkeys):
-        self.up = hotkeys.get('up', win32con.VK_UP)
-        self.down = hotkeys.get('down', win32con.VK_DOWN)
-        self.left = hotkeys.get('left', win32con.VK_LEFT)
-        self.right = hotkeys.get('right', win32con.VK_RIGHT)
-        self.throw = hotkeys.get('throw', 0x48)
-        self.quick = hotkeys.get('quick', 0x4A)
-        self.heavy = hotkeys.get('heavy', 0x4B)
-        self.dodge = hotkeys.get('dodge', 0x4C)
+        self.up = hotkeys.get("up", win32con.VK_UP)
+        self.down = hotkeys.get("down", win32con.VK_DOWN)
+        self.left = hotkeys.get("left", win32con.VK_LEFT)
+        self.right = hotkeys.get("right", win32con.VK_RIGHT)
+        self.throw = hotkeys.get("throw", 0x48)
+        self.quick = hotkeys.get("quick", 0x4A)
+        self.heavy = hotkeys.get("heavy", 0x4B)
+        self.dodge = hotkeys.get("dodge", 0x4C)
         self.rbr = 0xDD
         self.esc = win32con.VK_ESCAPE
         self.enter = win32con.VK_RETURN
@@ -96,7 +106,7 @@ class Hotkeys:
     @classmethod
     def load(cls):
         try:
-            res = json.load(global_settings.hotkeys_location.open('r'))
+            res = json.load(global_settings.hotkeys_location.open("r"))
             return cls(res)
         except FileNotFoundError:
             return cls({})
@@ -104,9 +114,9 @@ class Hotkeys:
     def save(self):
         try:
             global_settings.hotkeys_location.parent.mkdir(parents=True, exist_ok=True)
-            json.dump(vars(self), global_settings.hotkeys_location.open('w+'))
+            json.dump(vars(self), global_settings.hotkeys_location.open("w+"))
         except Exception as e:
-            logger.error('cant_save_hotkeys', e)
+            logger.error("cant_save_hotkeys", e)
 
 
 class GUIHotkeys:
@@ -132,12 +142,33 @@ class GUIHotkeys:
     @staticmethod
     def text_column(*keys):
         return Sg.Column(
-            [[Sg.Text(' ', size=(1, 1), key=f'{key}_text', font=(global_settings.font, 12))] for key in keys]
+            [
+                [
+                    Sg.Text(
+                        " ",
+                        size=(1, 1),
+                        key=f"{key}_text",
+                        font=(global_settings.font, 12),
+                    )
+                ]
+                for key in keys
+            ]
         )
 
     def input_column(self, *keys):
         return Sg.Column(
-            [[Sg.Input(size=(3, 1), key=key, enable_events=True, font=(global_settings.font, '12'), default_text=self.vk_to_char(vars(self.hotkeys)[key]))] for key in keys]
+            [
+                [
+                    Sg.Input(
+                        size=(3, 1),
+                        key=key,
+                        enable_events=True,
+                        font=(global_settings.font, "12"),
+                        default_text=self.vk_to_char(vars(self.hotkeys)[key]),
+                    )
+                ]
+                for key in keys
+            ]
         )
 
     def combined_column(self, *keys):
@@ -145,14 +176,31 @@ class GUIHotkeys:
 
     def create_window(self):
         layout = [
-            [Sg.Text(' ', size=(1, 1), key='hotkeys_title', font=(global_settings.font, 20))],
             [
-                *self.combined_column('up', 'left', 'throw', 'quick'),
-                *self.combined_column('down', 'right', 'dodge', 'heavy')
+                Sg.Text(
+                    " ",
+                    size=(1, 1),
+                    key="hotkeys_title",
+                    font=(global_settings.font, 20),
+                )
             ],
-            [Sg.Button('', key='save', font=(global_settings.font, 12)), Sg.Button('', key='back', font=(global_settings.font, 12))],
+            [
+                *self.combined_column("up", "left", "throw", "quick"),
+                *self.combined_column("down", "right", "dodge", "heavy"),
+            ],
+            [
+                Sg.Button("", key="save", font=(global_settings.font, 12)),
+                Sg.Button("", key="back", font=(global_settings.font, 12)),
+            ],
         ]
-        window = Sg.Window('', layout, size=(600, 350), keep_on_top=True, icon=global_settings.icon, metadata='hotkeys_window_title').Finalize()
+        window = Sg.Window(
+            "",
+            layout,
+            size=(600, 350),
+            keep_on_top=True,
+            icon=global_settings.icon,
+            metadata="hotkeys_window_title",
+        ).Finalize()
         global_settings.update_window(window)
         return window
 
@@ -163,10 +211,10 @@ class GUIHotkeys:
     @staticmethod
     def vk_to_char(code):
         direct = {
-            win32con.VK_LEFT: '◁',
-            win32con.VK_UP: '△',
-            win32con.VK_RIGHT: '▷',
-            win32con.VK_DOWN: '▽',
+            win32con.VK_LEFT: "◁",
+            win32con.VK_UP: "△",
+            win32con.VK_RIGHT: "▷",
+            win32con.VK_DOWN: "▽",
         }
         if code in direct:
             return direct[code]
@@ -182,13 +230,22 @@ class GUIHotkeys:
         while True:
             event, values = self.window.read(timeout=50)
             if self.last_keyboard_event:
-                if event in ['up', 'down', 'left', 'right', 'quick', 'heavy', 'dodge', 'throw']:
+                if event in [
+                    "up",
+                    "down",
+                    "left",
+                    "right",
+                    "quick",
+                    "heavy",
+                    "dodge",
+                    "throw",
+                ]:
                     vk = self.vsc_to_vk(self.last_keyboard_event.scan_code)
                     self.window[event].Update(self.vk_to_char(vk))
                     self.converter[event] = vk
-            if event in (Sg.WINDOW_CLOSED, 'back'):
+            if event in (Sg.WINDOW_CLOSED, "back"):
                 break
-            elif event == 'save':
+            elif event == "save":
                 self.save()
                 break
             global_settings.update_window(self.window)

@@ -3,9 +3,9 @@ from abstract_mode import Mode
 
 class TotalLvl(Mode):
     name = {
-        'default': 'Leveling up characters with lowest level',
-        'Русский': 'Повышение низкоуровневых персонажей',
-        'English': 'Leveling up characters with lowest level',
+        "default": "Leveling up characters with lowest level",
+        "Русский": "Повышение низкоуровневых персонажей",
+        "English": "Leveling up characters with lowest level",
     }
     character_selection_enabled = False
 

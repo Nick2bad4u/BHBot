@@ -1,13 +1,77 @@
 from levels import *
 
-characters = ['bödvar', 'cassidy', 'orion', 'lord vraxx', 'gnash', 'queen nai', 'hattori', 'sir roland', 'scarlet', 'thatch', 'ada', 'sentinel', 'lucien', 
-              'teros', 'brynn', 'asuri', 'barraza', 'ember', 'azoth', 'koji', 'ulgrim', 'diana', 'jhala', 'kor', 'wu shang', 'val', 
-              'ragnir', 'cross', 'mirage', 'nix', 'mordex', 'yumiko', 'artemis', 'caspian', 'sidra', 'xull', 'kaya', 'isaiah', 'jiro', 
-              'lin fei', 'zariel', 'rayman', 'dusk', 'fait', 'thor', 'petra', 'vector', 'volkov', 'onyx', 'jaeyun', 'mako', 'magyar', 'reno', 'munin', 'arcadia', 'ezio', 'tezca',
-              'thea', 'red raptor', 'loki', 'seven', 'vivi']
+characters = [
+    "bödvar",
+    "cassidy",
+    "orion",
+    "lord vraxx",
+    "gnash",
+    "queen nai",
+    "hattori",
+    "sir roland",
+    "scarlet",
+    "thatch",
+    "ada",
+    "sentinel",
+    "lucien",
+    "teros",
+    "brynn",
+    "asuri",
+    "barraza",
+    "ember",
+    "azoth",
+    "koji",
+    "ulgrim",
+    "diana",
+    "jhala",
+    "kor",
+    "wu shang",
+    "val",
+    "ragnir",
+    "cross",
+    "mirage",
+    "nix",
+    "mordex",
+    "yumiko",
+    "artemis",
+    "caspian",
+    "sidra",
+    "xull",
+    "kaya",
+    "isaiah",
+    "jiro",
+    "lin fei",
+    "zariel",
+    "rayman",
+    "dusk",
+    "fait",
+    "thor",
+    "petra",
+    "vector",
+    "volkov",
+    "onyx",
+    "jaeyun",
+    "mako",
+    "magyar",
+    "reno",
+    "munin",
+    "arcadia",
+    "ezio",
+    "tezca",
+    "thea",
+    "red raptor",
+    "loki",
+    "seven",
+    "vivi",
+]
 
 level_character_matrix_width = 15
-level_character_matrix = list([characters[i:i + level_character_matrix_width] for i in range(0, len(characters), level_character_matrix_width)])
+level_character_matrix = list(
+    [
+        characters[i : i + level_character_matrix_width]
+        for i in range(0, len(characters), level_character_matrix_width)
+    ]
+)
 
 character_matrix_width = 13
 character_matrix = []
@@ -15,10 +79,15 @@ character_matrix = []
 
 def build_character_matrix(_characters):
     global character_matrix
-    character_matrix = list([_characters[i:i + character_matrix_width] for i in range(0, len(_characters), character_matrix_width)])
+    character_matrix = list(
+        [
+            _characters[i : i + character_matrix_width]
+            for i in range(0, len(_characters), character_matrix_width)
+        ]
+    )
 
 
-build_character_matrix(characters + ['random'])
+build_character_matrix(characters + ["random"])
 
 
 def find_char(name):
@@ -30,7 +99,7 @@ def find_char(name):
 
 
 def map_to_char(row, col):
-    return ['down'] * (row - 1) + ['right'] * (col - 1)
+    return ["down"] * (row - 1) + ["right"] * (col - 1)
 
 
 def parse_pos(inp):
@@ -61,7 +130,9 @@ class Character:
         return gold
 
     def get_xp_to_level(self, level):
-        return max(sum((levels_xp[level]) for level in range(self.level, level)) - self.xp, 1)
+        return max(
+            sum((levels_xp[level]) for level in range(self.level, level)) - self.xp, 1
+        )
 
     @property
     def xp_to_next_level(self):
@@ -86,8 +157,18 @@ class Character:
         orow, opos = find_char(self.name)
         trow, tpos = find_char(name)
         if orow == 4:
-            return (trow - orow) * ['down'] + (orow - trow) * ['up'] + (tpos - opos) * ['right'] + (opos - tpos) * ['left']
-        return (tpos - opos) * ['right'] + (opos - tpos) * ['left'] + (trow - orow) * ['down'] + (orow - trow) * ['up']
+            return (
+                (trow - orow) * ["down"]
+                + (orow - trow) * ["up"]
+                + (tpos - opos) * ["right"]
+                + (opos - tpos) * ["left"]
+            )
+        return (
+            (tpos - opos) * ["right"]
+            + (opos - tpos) * ["left"]
+            + (trow - orow) * ["down"]
+            + (orow - trow) * ["up"]
+        )
 
     @staticmethod
     def get_duration_for_xp(xp, maximum=15):
@@ -108,7 +189,7 @@ class Character:
         return self.get_duration_to_next_gold()
 
     def __str__(self):
-        return f'<{self.name.capitalize()} (lvl: {self.level}, xp: {self.xp}, unlocked: {self.unlocked})>'
+        return f"<{self.name.capitalize()} (lvl: {self.level}, xp: {self.xp}, unlocked: {self.unlocked})>"
 
     def __repr__(self):
         return str(self)

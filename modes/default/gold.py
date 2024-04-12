@@ -3,9 +3,9 @@ from abstract_mode import Mode
 
 class Gold(Mode):
     name = {
-        'default': 'Gold farming',
-        'Русский': 'Фарм голды',
-        'English': 'Gold farming',
+        "default": "Gold farming",
+        "Русский": "Фарм голды",
+        "English": "Gold farming",
     }
     character_selection_enabled = False
 
@@ -18,4 +18,6 @@ class Gold(Mode):
 
     @property
     def next_character(self):
-        return sorted(self.bot.unlocked_characters, key=lambda char: char.xp_to_next_gold)[0]
+        return sorted(
+            self.bot.unlocked_characters, key=lambda char: char.xp_to_next_gold
+        )[0]
