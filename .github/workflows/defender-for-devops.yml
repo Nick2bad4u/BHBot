@@ -24,7 +24,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '20 23 * * 4'
+    - cron: '18 6 * * 0'
 
 jobs:
   MSDO:
@@ -32,23 +32,16 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Harden Runner
-      uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
-      with:
-        egress-policy: audit
-
-    - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
-    - uses: actions/setup-dotnet@4d6c8fcf3c8f7a60068d26b594648e99df24cee3 # v4.0.0
+    - uses: actions/checkout@v5
+    - uses: actions/setup-dotnet@v3
       with:
         dotnet-version: |
           5.0.x
           6.0.x
     - name: Run Microsoft Security DevOps
-      uses: microsoft/security-devops-action@7e3060ae1e6a9347dd7de6b28195099f39852fe2 # v1.10.0
+      uses: microsoft/security-devops-action@v1.6.0
       id: msdo
-      with:
-        tools: bandit, binskim, templateanalyzer, terrascan, trivy
     - name: Upload results to Security tab
-      uses: github/codeql-action/upload-sarif@4355270be187e1b672a7a1c7c7bae5afdc1ab94a # v3.24.10
+      uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: ${{ steps.msdo.outputs.sarifFile }}
