@@ -32,6 +32,7 @@ jobs:
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
+          python-version: '3.11.8' 
 
       - name: Lint Code Base
         uses: github/super-linter@45fc0d88288beee4701c62761281edfee85655d7 # v5.0.0
