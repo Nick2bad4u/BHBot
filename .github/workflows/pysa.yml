@@ -33,7 +33,7 @@ jobs:
       contents: read
       security-events: write
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
@@ -53,4 +53,4 @@ jobs:
           repo-directory: './'
           requirements-path: 'requirements.txt'
           infer-types: true
-          include-default-sapp-filters: false
+          include-default-sapp-filters: true
