@@ -1,3 +1,4 @@
+
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
@@ -16,52 +17,32 @@
 # and provide permission before this can report data back to azure.
 # Read the official documentation here : https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github
 
-name: MSDO windows-latest
+name: "Microsoft Defender For Devops"
+
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '18 6 * * 0'
 
 jobs:
-  sample:
-    name: Microsoft Security DevOps Analysis
-
-    # MSDO runs on windows-latest.
-    # ubuntu-latest also supported
+  MSDO:
+    # currently only windows latest is supported
     runs-on: windows-latest
 
-    permissions:
-      contents: read
-      id-token: write
-      security-events: write
-
     steps:
-
-      # Checkout your code repository to scan
-    - uses: actions/checkout@v3
-
-      # Run analyzers
-    - name: Run Microsoft Security DevOps Analysis
-      uses: microsoft/security-devops-action@latest
-      id: msdo
+    - uses: actions/checkout@v4
+    - uses: actions/setup-dotnet@v4
       with:
-      tools: dit, binskim, eslint, templateanalyzer, terrascan, trivy
-      policy: GitHub
-      # config: string. Optional. A file path to an MSDO configuration file ('*.gdnconfig').
-      # policy: 'GitHub' | 'microsoft' | 'none'. Optional. The name of a well-known Microsoft policy. If no configuration file or list of tools is provided, the policy may instruct MSDO which tools to run. Default: GitHub.
-      # categories: string. Optional. A comma-separated list of analyzer categories to run. Values: 'code', 'artifacts', 'IaC', 'containers'. Example: 'IaC, containers'. Defaults to all.
-      # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
-      # tools: string. Optional. A comma-separated list of analyzer tools to run. Values: 'bandit', 'binskim', 'eslint', 'templateanalyzer', 'terrascan', 'trivy'.
-
-      # Upload alerts to the Security tab
-    - name: Upload alerts to Security tab
-      uses: github/codeql-action/upload-sarif@v2
+        dotnet-version: |
+          5.0.x
+          6.0.x
+    - name: Run Microsoft Security DevOps
+      uses: microsoft/security-devops-action@v1
+      id: msdo
+    - name: Upload results to Security tab
+      uses: github/codeql-action/upload-sarif@v3
       with:
         sarif_file: ${{ steps.msdo.outputs.sarifFile }}
-
-      # Upload alerts file as a workflow artifact
-    - name: Upload alerts file as a workflow artifact
-      uses: actions/upload-artifact@v3
-      with:  
-        name: alerts
-        path: ${{ steps.msdo.outputs.sarifFile }}
