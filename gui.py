@@ -215,7 +215,7 @@ class GUI:
             return
         if self.bot_thread and self.bot_thread.is_alive():
             self.last_window_check = time()
-        elif time() - self.last_window_check > 120:
+        elif time() - self.last_window_check > 300:
             logger.debug("autostart_check")
             bh = BrawlhallaProcess.find()
             if not bh:
