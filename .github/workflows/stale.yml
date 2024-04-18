@@ -10,7 +10,7 @@ on:
   - cron: '43 6 * * *'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   stale:
