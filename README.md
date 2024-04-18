@@ -8,19 +8,20 @@ Heavily inspired by [BrawlhallaEZ](https://github.com/jamunano/BrawlhallaEZ)
 
 ### -------------------------------------------------------------------
 
-### BOT IS NO LONGER ACTIVELY MAINTAINED!
+### BOT IS BACK TO BEING ACTIVELY MAINTAINED!
+###### Join [Discord](https://discord.gg/2HDmuqqq9p "Discord") to help maintain the bot or add new features!
 
 ### -------------------------------------------------------------------
 
-**WARNING:** Bot was initially made for personal use. It should not, but still can cause some unexpected consequences, including making purchases from mallhalla (with in-game currencies). Developer is
-not responsible for any harm the program may case. Use at your own risk
+**WARNING:** The software was originally developed for private utilization. 
+While it is not designed to, it may potentially lead to unforeseen outcomes, including the execution of transactions within Mallhalla using in-game currencies. 
 
-(it should work fine tho, I tested it for >600 hours at this point)
+**The developers disclaims all liability for any damages that may arise from the use of this software. It is advised to proceed with caution and utilize the software at your own discretion.**
+
+(Bot has been tested by multiple people for over 3,000 hours without issue as of 4/18/2024)
 
 # Installation
-Latest release can always be downloaded [here](https://sovamor.co/bhbot)
-
-Bot _should_ auto-update as soon as any updates are released according to selected branch in settings
+Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHBot/releases)
 
 # Features
 
@@ -36,14 +37,15 @@ Bot _should_ auto-update as soon as any updates are released according to select
 - ~~Brews you coffee~~ (only tea supported for now)
 
 # Usage
-Should be pretty straightforward. Just select needed settings and click "Start" :)
+- The process is designed to be intuitive. Simply choose the required settings by clicking the "Settings" button
+- Once settings are saved, start the program by clicking on "Start" button
 
 # Limitations
-- Bot requires "Collapse crossovers" to be set to Yes. If you think it should automatically set it to be so, please [open an issue](https://github.com/sovamorco/bhbot/issues)
-- Bot requires ingame language to be set to English. If you think it should automatically set it to be so, please [open an issue](https://github.com/sovamorco/bhbot/issues)
+- Bot requires "Collapse crossovers" to be set to Yes. If you think it should automatically set it to be so, please [open an issue](https://github.com/nick2bad4u/bhbot/issues)
+- Bot requires ingame language to be set to English. If you think it should automatically set it to be so, please [open an issue](https://github.com/nick2bad4u/bhbot/issues)
 
-# Internal stuff
-You can always check the code, but basically bot uses windows SendMessage API to send inputs directly to Brawlhalla window and pixel detection to detect states and
-decide what to do at any given point
+# Technical Overview
+- The underlying code is always available for review by anyone.
+- Essentially, the bot employs the Windows SendMessage API to transmit inputs directly to the Brawlhalla window. It utilizes pixel detection to discern states and determine the appropriate action at any given moment.
 
-You can use BrawlhallaBot class directly or write your own wrapper for it. It should be completely independent and gui.py is just a PySimpleGUI graphical wrapper
+- The BrawlhallaBot class can be utilized directly or you may develop a custom wrapper for it. It is designed to operate independently, with gui.py serving merely as a graphical wrapper using PySimpleGUI.
