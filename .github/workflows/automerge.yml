@@ -2,6 +2,7 @@ name: Enable automerge on dependabot PRs
 
 on:
   # See note below about using pull_request_target
+  workflow_dispatch:
   pull_request_target:
 
 jobs:
