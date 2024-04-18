@@ -74,3 +74,14 @@ modes/default/__pycache__/totallvl.cpython-311.pyc
 .vs/BHBot/FileContentIndex/f993ce8a-bb9e-4026-b823-68c0241d4f78.vsidx
 .vs/BHBot/FileContentIndex/d64165ad-09f9-4de2-9e8c-0a8110948a73.vsidx
 .vs/BHBot/FileContentIndex/711c0d3e-1757-4467-b345-7314c103ec7c.vsidx
+__pycache__/windows.cpython-311.pyc
+__pycache__/utils.cpython-311.pyc
+__pycache__/menu.cpython-311.pyc
+__pycache__/levels.cpython-311.pyc
+__pycache__/font_loader.cpython-311.pyc
+__pycache__/direct_input.cpython-311.pyc
+__pycache__/config.cpython-311.pyc
+__pycache__/client_config.cpython-311.pyc
+__pycache__/characters.cpython-311.pyc
+__pycache__/bot.cpython-311.pyc
+__pycache__/abstract_mode.cpython-311.pyc
