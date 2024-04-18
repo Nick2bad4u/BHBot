@@ -45,7 +45,7 @@ nbconvert==7.16.3
 nbformat==5.10.4
 packaging==24.0
 pandocfilters==1.5.1
-parso==0.8.3
+parso==0.8.4
 pbr==6.0.0
 pefile==2023.2.7
 pickleshare==0.7.5
