@@ -2,7 +2,7 @@ altgraph==0.17.4
 appdirs==1.4.4
 asttokens==2.4.1
 attrs==23.2.0
-auto-py-to-exe==2.42.0
+auto-py-to-exe==2.43.3
 backcall==0.2.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
