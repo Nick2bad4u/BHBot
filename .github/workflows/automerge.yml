@@ -7,7 +7,7 @@ on:
 jobs:
   automerge:
     name: Enable automerge on dependabot PRs
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Enable automerge on dependabot PRs
         uses: daneden/enable-automerge-action@v1
