@@ -2,7 +2,7 @@
 
 Brawlhalla के लिए गोल्ड/XP फार्मिंग बॉट 
 
-भारी रूप से [BrawlhallaEZ] से प्रेरित (https://github.com/jamunano/BrawlhallaEZ) 
+भारी रूप से [BrawlhallaEZ] (https://github.com/jamunano/BrawlhallaEZ) 
 
 ### ------ -------------------------------------------------- ----------- 
 
