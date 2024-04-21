@@ -1,7 +1,5 @@
 # BHBot 
 
-[Этот файл доступен на Русском языке](README_RU.md) 
-
 Brawlhalla 的金币/XP 农业机器人
 
 深受 [BrawlhallaEZ](https://github.com/jamunano/BrawlhallaEZ) 的启发
