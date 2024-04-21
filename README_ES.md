@@ -7,7 +7,7 @@ Muy inspirado en [BrawlhallaEZ](https://github.com/jamunano/BrawlhallaEZ)
 ### ----------------------------------------------- --------------------
 
 ### ¡BOT VUELVE A SER MANTENIDO ACTIVAMENTE!
-###### ¡Únete a [Discord](https://discord.gg/2HDmuqqq9p "Discord") para ayudar a mantener el bot o agregar nuevas funciones!
+###### ¡Únete a [Discord](https://discord.gg/2HDmuqqq9p) para ayudar a mantener el bot o agregar nuevas funciones!
 
 ### ----------------------------------------------- --------------------
 
@@ -39,8 +39,8 @@ La última versión siempre se puede descargar [aquí](https://github.com/Nick2b
 - Una vez guardada la configuración, inicie el programa haciendo clic en el botón "Inicio"
 
 # Limitaciones
-- El bot requiere que "Contraer cruces" esté configurado en Sí. Si cree que debería configurarlo automáticamente, [abra un problema] (https://github.com/nick2bad4u/bhbot/issues)
-- El bot requiere que el idioma del juego esté configurado en inglés. Si cree que debería configurarlo automáticamente, [abra un problema] (https://github.com/nick2bad4u/bhbot/issues)
+- El bot requiere que "Contraer cruces" esté configurado en Sí. Si cree que debería configurarlo automáticamente, [abra un problema](https://github.com/nick2bad4u/bhbot/issues)
+- El bot requiere que el idioma del juego esté configurado en inglés. Si cree que debería configurarlo automáticamente, [abra un problema](https://github.com/nick2bad4u/bhbot/issues)
 
 # Resumen técnico
 - El código subyacente siempre está disponible para que cualquiera pueda revisarlo.
