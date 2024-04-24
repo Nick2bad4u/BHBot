@@ -70,7 +70,7 @@ PyUpdater==4.0
 pywin32==306
 pywin32-ctypes==0.2.2
 pyzmq==26.0.2
-referencing==0.34.0
+referencing==0.35.0
 regex==2024.4.16
 requests==2.31.0
 rpds-py==0.18.0
