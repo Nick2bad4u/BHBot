@@ -1,3 +1,6 @@
 remote_theme: pages-themes/midnight@v0.2.0
 title: Brawlhalla BH Bot
 description: Brawlhalla Bot Page
+url: "https://github.typpi.online" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
