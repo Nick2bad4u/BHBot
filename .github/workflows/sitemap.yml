@@ -10,14 +10,19 @@ jobs:
     name: Generate a sitemap
 
     steps:
+    - name: Harden Runner
+      uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+      with:
+        egress-policy: audit
+
     - name: Checkout the repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       with:
         fetch-depth: 0 
 
     - name: Generate the sitemap
       id: sitemap
-      uses: cicirello/generate-sitemap@v1.10.0
+      uses: cicirello/generate-sitemap@63643192a20862580b2e628ce0e553a8907e9ee9 # v1.10.0
       with:
         base-url-path: https://github.typpi.online
 
