@@ -33,6 +33,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Harden Runner
+      uses: step-security/harden-runner@v2
+      with:
+        egress-policy: audit
+
     - uses: actions/checkout@v4
     - uses: actions/setup-dotnet@v4
       with:
