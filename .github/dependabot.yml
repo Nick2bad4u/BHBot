@@ -12,6 +12,11 @@ updates:
     allow:
       # Allow both direct and indirect updates for all packages
       - dependency-type: "all"
+    groups:
+      general:
+        applies-to: version-updates
+        patterns:
+          - "*"
 
   - package-ecosystem: github-actions
     directory: /
