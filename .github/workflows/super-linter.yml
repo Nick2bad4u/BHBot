@@ -35,7 +35,9 @@ jobs:
 
       - name: Lint Code Base
         uses: github/super-linter@4e51915f4a812abf59fed160bb14595c0a38a9e7 # v6
+        skip-check:
+          - CKV2_GHA_1
         env:
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
