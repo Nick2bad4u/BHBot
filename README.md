@@ -1,3 +1,23 @@
+[![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
+[![Bandit](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml)
+[![CodeQL](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml)
+[![Dependabot Updates](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates)
+[![Dependency review](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml)
+[![DevSkim](https://github.com/Nick2bad4u/BHBot/actions/workflows/devskim.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/devskim.yml)
+[![Generate xml sitemap](https://github.com/Nick2bad4u/BHBot/actions/workflows/sitemap.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sitemap.yml)
+[![Greetings](https://github.com/Nick2bad4u/BHBot/actions/workflows/greetings.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/greetings.yml)
+[![Mark stale issues and pull requests](https://github.com/Nick2bad4u/BHBot/actions/workflows/stale.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/stale.yml)
+[![Microsoft Defender For Devops](https://github.com/Nick2bad4u/BHBot/actions/workflows/defender-for-devops.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/defender-for-devops.yml)
+[![OSSAR](https://github.com/Nick2bad4u/BHBot/actions/workflows/ossar.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/ossar.yml)
+[![pages-build-deployment](https://github.com/Nick2bad4u/BHBot/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/pages/pages-build-deployment)
+[![Pylint](https://github.com/Nick2bad4u/BHBot/actions/workflows/pylint.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/pylint.yml)
+[![Python application](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-app.yml)
+[![Python Package using Conda](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-package-conda.yml)
+[![Scorecard supply-chain security](https://github.com/Nick2bad4u/BHBot/actions/workflows/scorecard.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/scorecard.yml)
+[![Semgrep](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml)
+[![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
+[![Upload Python Package](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml)
+
 # BHBot
 
 [Этот файл доступен на Русском языке](README_RU.md)
