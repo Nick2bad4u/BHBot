@@ -2,7 +2,7 @@ name: Workflow for Codecov example-python
 on: [push, pull_request]
 jobs:
   run:
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
@@ -13,10 +13,6 @@ jobs:
         uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           fetch-depth: 0
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Install pytest
