@@ -1,9 +1,8 @@
 name: Workflow for Codecov example-python
 on: [push, pull_request]
-runs-on: self-hosted
 jobs:
   run:
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
