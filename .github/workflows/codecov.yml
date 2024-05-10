@@ -20,7 +20,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Install pytest
-        run: pip install pytest
+        run: pip install pytest-cov
+      - name: Run ATS
+        uses: codecov/codecov-ats@d5a8e2d68e510a4ed2d0657bb9e9e8760a3f6ffc # v0
+        env:
+          CODECOV_STATIC_TOKEN: ${{ secrets.CODECOV_STATIC_TOKEN }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Run tests and collect coverage
         run: pytest --cov app ${{ env.CODECOV_ATS_TESTS }}
       - name: Upload coverage to Codecov
