@@ -17,6 +17,7 @@
 [![Semgrep](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml)
 [![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
 [![Upload Python Package](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml)
+[![codecov](https://codecov.io/gh/Nick2bad4u/BHBot/graph/badge.svg?token=5MRL5ZXUPZ)](https://codecov.io/gh/Nick2bad4u/BHBot)
 
 # BHBot
 
