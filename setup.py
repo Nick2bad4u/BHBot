@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='BHBot',
-    version='V2.2',
+    version='V2.3',
     packages=[''],
     url='https://github.com/Nick2bad4u/BHBot',
     license='Unlicense',
