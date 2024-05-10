@@ -13,8 +13,6 @@ jobs:
         uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           fetch-depth: 0
-      - name: Install dependencies
-        run: pip install -r requirements.txt
       - name: Install pytest
         run: pip install pytest-cov
       - name: Run ATS
