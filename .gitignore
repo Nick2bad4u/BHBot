@@ -85,3 +85,14 @@ __pycache__/client_config.cpython-311.pyc
 __pycache__/characters.cpython-311.pyc
 __pycache__/bot.cpython-311.pyc
 __pycache__/abstract_mode.cpython-311.pyc
+tests-badge.svg
+reports/junit/junit.xml
+reports/flake8/flake8stats.txt
+reports/coverage/coverage.xml
+flake8-badge.svg
+coverage-badge.svg
+__pycache__/test_pytest.cpython-311.pyc
+__pycache__/test_pytest.cpython-311-pytest-8.1.1.pyc
+__pycache__/gui.cpython-311-pytest-8.1.1.pyc
+__pycache__/bot.cpython-311-pytest-8.1.1.pyc
+.coverage
