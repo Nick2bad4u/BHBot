@@ -1,5 +1,7 @@
 [![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
 [![Bandit](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml)
+[![Flake8](https://i.gyazo.com/3ff00dbb983f8c3d74420e7de9650145.png)](https://flake8.pycqa.org/en/latest/)
+[![PyTest](https://i.gyazo.com/75038b4c1a4a490a7a25f34a2ae998a6.png)](https://docs.pytest.org/en/8.2.x/)
 [![CodeQL](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml)
 [![Dependabot Updates](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates)
 [![Dependency review](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml)
