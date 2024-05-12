@@ -17,11 +17,14 @@ from utils import *
 
 BELOW_NORMAL_PRIORITY_CLASS = 0x4000  # Why is this not in win32con??? It has literally all other priority classes..
 
+
 class NotRespondingError(Exception):
     pass
 
+
 class SteamExeNotFound(Exception):
     pass
+
 
 def get_window(title):
     def window_enumeration_handler(hwnd, response):
@@ -30,9 +33,11 @@ def get_window(title):
             proc = psutil.Process(pid)
             if proc.name() == title:
                 response.append((hwnd, proc))
+
     res = []
     win32gui.EnumWindows(window_enumeration_handler, res)
     return res[0] if res else None
+
 
 class SteamClient:
     _WIN_REG_SHELL = (winreg.HKEY_CLASSES_ROOT, r"steam\Shell\Open\Command")
@@ -41,6 +46,7 @@ class SteamClient:
     def __init__(self):
         self.path = self.find_exe()
         self.cmd = f'"{self.path}" -applaunch 291550 -noeac'
+
     # yoinked from battlenet extension for gog galaxy
     @staticmethod
     def __search_registry_for_run_cmd(*args):
@@ -60,6 +66,7 @@ class SteamClient:
         for proc in psutil.process_iter():
             if proc.name() == self._PROCESS_NAME:
                 return proc.exe()
+
     # yoinked from battlenet extension for gog galaxy
     def _find_exe_registry(self):
         shell_reg_value = self.__search_registry_for_run_cmd(*self._WIN_REG_SHELL)
@@ -76,6 +83,7 @@ class SteamClient:
 
     def run_brawlhalla(self):
         subprocess.Popen(self.cmd, creationflags=subprocess.DETACHED_PROCESS)
+
 
 class BrawlhallaProcess:
     def __init__(self, hwnd, proc):
@@ -211,6 +219,7 @@ class BrawlhallaProcess:
         )
         win32process.SetPriorityClass(handle, BELOW_NORMAL_PRIORITY_CLASS)
         win32api.CloseHandle(handle)
+
 
 class Singleton:
     def __init__(self):

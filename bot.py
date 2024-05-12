@@ -13,17 +13,22 @@ CONNECTION_LEVELS = (
     (255, 0, 0),  # red
 )
 
+
 class QueuedRecalculation(Exception):
     pass
+
 
 class ResizedError(Exception):
     pass
 
+
 class DangerZoneError(Exception):
     pass
 
+
 class InvalidStateError(Exception):
     pass
+
 
 class BrawlhallaBot:
     def __init__(self, config, hotkeys, bot_queue):

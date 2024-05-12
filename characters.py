@@ -76,6 +76,7 @@ level_character_matrix = list(
 character_matrix_width = 13
 character_matrix = []
 
+
 def build_character_matrix(_characters):
     global character_matrix
     character_matrix = list(
@@ -85,7 +86,9 @@ def build_character_matrix(_characters):
         ]
     )
 
+
 build_character_matrix(characters + ["random"])
+
 
 def find_char(name):
     for i, row in enumerate(character_matrix):
@@ -94,8 +97,10 @@ def find_char(name):
         except ValueError:
             pass
 
+
 def map_to_char(row, col):
     return ["down"] * (row - 1) + ["right"] * (col - 1)
+
 
 def parse_pos(inp):
     try:
@@ -105,6 +110,7 @@ def parse_pos(inp):
     if not pos:
         return None
     return map_to_char(*pos)
+
 
 class Character:
     def __init__(self, name, level=0, xp=0, unlocked=True):

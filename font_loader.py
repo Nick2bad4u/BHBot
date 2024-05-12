@@ -4,6 +4,7 @@ from fontTools.ttLib import TTFont
 
 FONT_SPECIFIER_NAME_ID = 4
 
+
 def get_font_name(file):
     font = TTFont(file)
     name = ""
@@ -15,6 +16,7 @@ def get_font_name(file):
         if record.nameID == FONT_SPECIFIER_NAME_ID and not name:
             return name_str
     return ""
+
 
 def load_font(fontpath):
     flags = 0x10 | 0x20

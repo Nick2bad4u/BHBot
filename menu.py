@@ -3,10 +3,12 @@ from typing import Optional, Callable
 
 from direct_input import VirtualInput
 
+
 # noinspection PyArgumentList
 class Direction(Enum):
     HORIZONTAL = auto()
     VERTICAL = auto()
+
 
 class MenuItem:
     def __init__(self, name: str):
@@ -45,6 +47,7 @@ class MenuItem:
             steps += path[i]._move_to(path[i + 1], vi)
         return steps
 
+
 class Layout(MenuItem):
     def __init__(
         self,
@@ -72,13 +75,16 @@ class Layout(MenuItem):
             return steps
         return super()._move_to(target, vi)
 
+
 class MiniMenu(Layout):
     def move_to_parent(self, vi: VirtualInput) -> list[Callable]:
         self.parent.current_position = 1
         return [vi.dodge]
 
+
 class ThirdColumn(Layout):
     pass
+
 
 def find_element(name: str, layout: Layout = None) -> Optional[MenuItem]:
     if layout is None:
@@ -92,12 +98,14 @@ def find_element(name: str, layout: Layout = None) -> Optional[MenuItem]:
                 return res
     return None
 
+
 def distance_to_root(node: MenuItem) -> int:
     distance = 0
     while node.parent is not None:
         distance += 1
         node = node.parent
     return distance
+
 
 def path_between(source: MenuItem, target: MenuItem) -> list[MenuItem]:
     steps = [source]
@@ -123,6 +131,7 @@ def path_between(source: MenuItem, target: MenuItem) -> list[MenuItem]:
         target = target.parent
 
     return steps + list(reversed(reverse_steps))
+
 
 def generate_layout():
     options_items = [
@@ -187,7 +196,9 @@ def generate_layout():
     main = Layout("main", main_layout_items, 0, Direction.HORIZONTAL)
     return main
 
+
 main_layout = generate_layout()
+
 
 def regenerate_layout():
     global main_layout

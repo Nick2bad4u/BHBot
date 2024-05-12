@@ -5,6 +5,7 @@ from characters import *
 from direct_input import *
 from utils import *
 
+
 def display_changelog():
     changelog_path = Path(os.getenv("LOCALAPPDATA")) / "BHBot" / "changelog"
     if global_settings.compiled and (
@@ -21,6 +22,7 @@ def display_changelog():
         )
         changelog_path.parent.mkdir(parents=True, exist_ok=True)
         changelog_path.write_text(global_settings.APP_VERSION, "utf-8")
+
 
 class Config:
     def __init__(self, config):
@@ -50,6 +52,7 @@ class Config:
             return cls(res)
         except FileNotFoundError:
             return cls({})
+
     # noinspection PyUnresolvedReferences
     @staticmethod
     def get_modes():
@@ -90,6 +93,7 @@ class Config:
         return global_settings.messages.get(
             "config", 'Missing "config" entry in language'
         ).format(self)
+
 
 # noinspection PyUnresolvedReferences
 class GUIConfig:
