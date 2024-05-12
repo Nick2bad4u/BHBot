@@ -589,7 +589,7 @@ class BrawlhallaBot:
 
     def after_fight(self):
         logger.info("Cooling down after fight...")
-        sleep(5)
+        sleep(1)
         self.get_states()
         if self.has_state("disconnected", "game_in_progress", "offline"):
             logger.info("disconnected")
