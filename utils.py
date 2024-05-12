@@ -21,7 +21,6 @@ from font_loader import get_font_name, load_font
 rfh.close()
 log.removeHandler(rfh)
 
-
 def get_text(element):
     if isinstance(element, Sg.Text):
         return element.get()
@@ -29,14 +28,12 @@ def get_text(element):
         return element.get_text()
     return f"Unsupported element type {type(element)}"
 
-
 def set_text(element, value):
     if isinstance(element, Sg.Text):
         element.set_size((len(value), 1))
         element.update(value)
     if isinstance(element, Sg.Button):
         element.update(value)
-
 
 def my_emit(superclass, record):
     record = copy(record)
@@ -46,16 +43,13 @@ def my_emit(superclass, record):
         )
     superclass.emit(record)
 
-
 class MyStreamHandler(logging.StreamHandler):
     def emit(self, record):
         my_emit(super(), record)
 
-
 class MyFileHandler(logging.FileHandler):
     def emit(self, record):
         my_emit(super(), record)
-
 
 class MyFormatter(logging.Formatter):
     def format(self, record):
@@ -69,7 +63,6 @@ class MyFormatter(logging.Formatter):
         self._style._fmt = format_orig
         return result
 
-
 logger = logging.getLogger("main_bot_logger")
 logger.setLevel(logging.DEBUG)
 hdlr = MyStreamHandler()
@@ -77,14 +70,11 @@ hdlr.setLevel(logging.DEBUG)
 hdlr.setFormatter(MyFormatter())
 logger.addHandler(hdlr)
 
-
 def excepthook(type_, value, traceback):
     logger.exception(value)
     sys.__excepthook__(type_, value, traceback)
 
-
 sys.excepthook = excepthook
-
 
 class Settings:
     installation_folder = Path.cwd()
@@ -168,7 +158,6 @@ class Settings:
             return cls(json.load(cls.settings_location.open("r")))
         except FileNotFoundError:
             return cls({})
-
     # noinspection PyUnresolvedReferences
     def get_languages(self):
         languages = []
@@ -220,12 +209,10 @@ class Settings:
             json.dump(self.get_save_vars(), self.settings_location.open("w+"))
         except Exception as e:
             logger.error(f"Could not save settings. Exception: {e}")
-
     # noinspection PyUnresolvedReferences
     @property
     def messages(self):
         return self.language.MESSAGES
-
     # noinspection PyUnresolvedReferences
     def update_window(self, window):
         for key in window.AllKeysDict:
@@ -351,9 +338,7 @@ class Settings:
             "settings", 'Missing "settings" entry in language'
         ).format(self)
 
-
 global_settings = Settings.load()
-
 
 def box(text, startmargin=True, endmargin=True):
     lines = text.split("\n")
@@ -369,13 +354,11 @@ def box(text, startmargin=True, endmargin=True):
     if endmargin:
         logger.info("\n\n")
 
-
 def format_time(seconds):
     seconds = int(seconds)
     m, s = divmod(seconds, 60)
     h, m = divmod(m, 60)
     return f"{h:d}:{m:02d}:{s:02d}"
-
 
 def get_rotation():
     try:
@@ -384,7 +367,6 @@ def get_rotation():
     except Exception as e:
         logger.warning("rotation_error", e)
         return []
-
 
 def get_menu_pixels():
     try:
@@ -402,7 +384,6 @@ def get_menu_pixels():
         logger.warning("menu_pixels_error", e)
         return {}
 
-
 def chunks(input_list, n):
     """
     Yield n number of sequential chunks from input_list.
@@ -412,7 +393,6 @@ def chunks(input_list, n):
     for i in range(n):
         si = (d + 1) * (i if i < r else r) + d * (0 if i < r else i - r)
         yield input_list[si : si + (d + 1 if i < r else d)]
-
 
 def compare(fst, snd):
     return sum(fst[i] != snd[i] for i in range(min(len(fst), len(snd))))

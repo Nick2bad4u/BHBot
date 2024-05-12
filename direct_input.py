@@ -11,7 +11,6 @@ from utils import *
 MAP_VSC_TO_VK = 1
 MAP_VK_TO_CHAR = 2
 
-
 # noinspection PyPep8Naming
 class VirtualInput:
     def __init__(self, brawlhalla, hotkeys):
@@ -88,7 +87,6 @@ class VirtualInput:
         ]
         self.press_key(choice(move_keys), choice(fight_keys), delay=0.2)
 
-
 class Hotkeys:
     def __init__(self, hotkeys):
         self.up = hotkeys.get("up", win32con.VK_UP)
@@ -118,7 +116,6 @@ class Hotkeys:
         except Exception as e:
             logger.error("cant_save_hotkeys", e)
 
-
 class GUIHotkeys:
     def __init__(self):
         self.hotkeys = Hotkeys.load()
@@ -130,7 +127,6 @@ class GUIHotkeys:
     def hook_keyboard(self):
         def inner_hook(event):
             self.last_keyboard_event = event
-
         if not self.hook:
             self.hook = keyboard.hook(inner_hook)
 

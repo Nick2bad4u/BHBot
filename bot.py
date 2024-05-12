@@ -13,22 +13,17 @@ CONNECTION_LEVELS = (
     (255, 0, 0),  # red
 )
 
-
 class QueuedRecalculation(Exception):
     pass
-
 
 class ResizedError(Exception):
     pass
 
-
 class DangerZoneError(Exception):
     pass
 
-
 class InvalidStateError(Exception):
     pass
-
 
 class BrawlhallaBot:
     def __init__(self, config, hotkeys, bot_queue):
@@ -589,10 +584,12 @@ class BrawlhallaBot:
     def go_to_fight(self):
         self.process_queue(True)
         self.execute_steps(
-            "starting_game", self.wait_for_loading, self.wait_for_loaded, "loaded", 5
+            "Starting game", self.wait_for_loading, self.wait_for_loaded, "loaded", 5
         )
 
     def after_fight(self):
+        logger.info("Cooling down after fight...")
+        sleep(5)
         self.get_states()
         if self.has_state("disconnected", "game_in_progress", "offline"):
             logger.info("disconnected")

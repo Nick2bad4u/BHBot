@@ -1,25 +1,3 @@
-[![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
-[![Bandit](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml)
-[![Flake8](https://i.gyazo.com/3ff00dbb983f8c3d74420e7de9650145.png)](https://flake8.pycqa.org/en/latest/)
-[![PyTest](https://i.gyazo.com/75038b4c1a4a490a7a25f34a2ae998a6.png)](https://docs.pytest.org/en/8.2.x/)
-[![CodeQL](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml)
-[![Dependabot Updates](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates)
-[![Dependency review](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml)
-[![DevSkim](https://github.com/Nick2bad4u/BHBot/actions/workflows/devskim.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/devskim.yml)
-[![Generate xml sitemap](https://github.com/Nick2bad4u/BHBot/actions/workflows/sitemap.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sitemap.yml)
-[![Greetings](https://github.com/Nick2bad4u/BHBot/actions/workflows/greetings.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/greetings.yml)
-[![Mark stale issues and pull requests](https://github.com/Nick2bad4u/BHBot/actions/workflows/stale.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/stale.yml)
-[![Microsoft Defender For Devops](https://github.com/Nick2bad4u/BHBot/actions/workflows/defender-for-devops.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/defender-for-devops.yml)
-[![OSSAR](https://github.com/Nick2bad4u/BHBot/actions/workflows/ossar.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/ossar.yml)
-[![pages-build-deployment](https://github.com/Nick2bad4u/BHBot/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/pages/pages-build-deployment)
-[![Pylint](https://github.com/Nick2bad4u/BHBot/actions/workflows/pylint.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/pylint.yml)
-[![Python application](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-app.yml)
-[![Python Package using Conda](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-package-conda.yml)
-[![Scorecard supply-chain security](https://github.com/Nick2bad4u/BHBot/actions/workflows/scorecard.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/scorecard.yml)
-[![Semgrep](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml)
-[![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
-[![Upload Python Package](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml)
-
 # BHBot
 
 [Этот файл доступен на Русском языке](README_RU.md)
@@ -30,20 +8,19 @@ Heavily inspired by [BrawlhallaEZ](https://github.com/jamunano/BrawlhallaEZ)
 
 ### -------------------------------------------------------------------
 
-### BOT IS BACK TO BEING ACTIVELY MAINTAINED!
-###### Join [Discord](https://discord.gg/2HDmuqqq9p "Discord") to help maintain the bot or add new features!
+### BOT IS NO LONGER ACTIVELY MAINTAINED!
 
 ### -------------------------------------------------------------------
 
-**WARNING:** The software was originally developed for private utilization. 
-While it is not designed to, it may potentially lead to unforeseen outcomes, including the execution of transactions within Mallhalla using in-game currencies. 
+**WARNING:** Bot was initially made for personal use. It should not, but still can cause some unexpected consequences, including making purchases from mallhalla (with in-game currencies). Developer is
+not responsible for any harm the program may case. Use at your own risk
 
-**The developers disclaims all liability for any damages that may arise from the use of this software. It is advised to proceed with caution and utilize the software at your own discretion.**
-
-(Bot has been tested by multiple people for over 3,000 hours without issue as of 4/18/2024)
+(it should work fine tho, I tested it for >600 hours at this point)
 
 # Installation
-Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHBot/releases)
+Latest release can always be downloaded [here](https://sovamor.co/bhbot)
+
+Bot _should_ auto-update as soon as any updates are released according to selected branch in settings
 
 # Features
 
@@ -59,15 +36,14 @@ Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHB
 - ~~Brews you coffee~~ (only tea supported for now)
 
 # Usage
-- The process is designed to be intuitive. Simply choose the required settings by clicking the "Settings" button
-- Once settings are saved, start the program by clicking on "Start" button
+Should be pretty straightforward. Just select needed settings and click "Start" :)
 
 # Limitations
-- Bot requires "Collapse crossovers" to be set to Yes. If you think it should automatically set it to be so, please [open an issue](https://github.com/nick2bad4u/bhbot/issues)
-- Bot requires ingame language to be set to English. If you think it should automatically set it to be so, please [open an issue](https://github.com/nick2bad4u/bhbot/issues)
+- Bot requires "Collapse crossovers" to be set to Yes. If you think it should automatically set it to be so, please [open an issue](https://github.com/sovamorco/bhbot/issues)
+- Bot requires ingame language to be set to English. If you think it should automatically set it to be so, please [open an issue](https://github.com/sovamorco/bhbot/issues)
 
-# Technical Overview
-- The underlying code is always available for review by anyone.
-- Essentially, the bot employs the Windows SendMessage API to transmit inputs directly to the Brawlhalla window. It utilizes pixel detection to discern states and determine the appropriate action at any given moment.
+# Internal stuff
+You can always check the code, but basically bot uses windows SendMessage API to send inputs directly to Brawlhalla window and pixel detection to detect states and
+decide what to do at any given point
 
-- The BrawlhallaBot class can be utilized directly or you may develop a custom wrapper for it. It is designed to operate independently, with gui.py serving merely as a graphical wrapper using PySimpleGUI<img src="https://www.google-analytics.com/collect?v=2&tid=G-6RR5ZF4BJV&cid=555&t=event&en=eventName">
+You can use BrawlhallaBot class directly or write your own wrapper for it. It should be completely independent and gui.py is just a PySimpleGUI graphical wrapper

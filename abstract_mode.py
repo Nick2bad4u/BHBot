@@ -1,7 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from utils import *
 
-
 class Mode(metaclass=ABCMeta):
     name = None
     character_selection_enabled = True

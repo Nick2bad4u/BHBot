@@ -3,7 +3,6 @@ import uuid
 
 from bot import *
 
-
 class Handler(logging.StreamHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -13,7 +12,6 @@ class Handler(logging.StreamHandler):
         if isinstance(record.msg, str) and record.msg in global_settings.messages:
             record.msg = global_settings.messages[record.msg]
         Sg.cprint(self.format(record), text_color=colors.get(record.levelno, "red"))
-
 
 class GUI:
     def __init__(self):
@@ -266,7 +264,6 @@ class GUI:
             global_settings.update_window(self.window)
 
         self.window.close()
-
 
 if __name__ == "__main__":
     Singleton()
