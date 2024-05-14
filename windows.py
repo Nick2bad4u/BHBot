@@ -13,7 +13,44 @@ import win32process
 import winxpgui
 from PIL import Image
 
-from utils import *
+from utils import (
+    Client,
+    ClientConfig,
+    MyFileHandler,
+    MyFormatter,
+    MyStreamHandler,
+    Path,
+    Settings,
+    Sg,
+    box,
+    ceil,
+    chunks,
+    compare,
+    copy,
+    datetime,
+    excepthook,
+    floor,
+    format_time,
+    get_font_name,
+    get_menu_pixels,
+    get_rotation,
+    get_text,
+    global_settings,
+    hdlr,
+    importlib,
+    json,
+    load_font,
+    log,
+    logger,
+    logging,
+    my_emit,
+    os,
+    requests,
+    rfh,
+    set_text,
+    sys,
+    timedelta,
+)
 
 BELOW_NORMAL_PRIORITY_CLASS = 0x4000  # Why is this not in win32con??? It has literally all other priority classes..
 

@@ -1,0 +1,113 @@
+#! /usr/bin/env python
+#
+# Remove wildcard imports from Python code.
+#
+# Takes Python code on stdin and copies it to stdout,
+# replacing any 'from foo import *' with a multi-line
+# import of all the symbols in foo.
+#
+# You can then use pylint or similar to identify and
+# delete the unneeded symbols.
+#
+# See http://github.com/quentinsf/dewildcard for info.
+#
+# Quentin Stafford-Fraser, 2015
+
+import argparse
+import importlib
+import os
+import re
+import sys
+
+
+def import_all_string(module_name, single_line=False, base_pkg_name=None):
+    """
+    Return the import statement needed to import all the local
+    symbols in module_name that don't start with '_'.
+
+    If single_line, don't split result over multiple lines.
+
+    base_pkg_name needs to be specified if the imports are relative.
+    """
+    importlib.import_module(module_name, base_pkg_name)
+    if single_line:
+        import_line = "from %s import %%s\n" % module_name
+        length = 0
+        separator = ", "
+    else:
+        import_line = "from %s import ( %%s )\n" % module_name
+        length = len(import_line) - 5
+        separator = ",\n"
+
+    return import_line % (separator + length * " ").join(
+        [a for a in dir(sys.modules[module_name]) if not a.startswith("_")]
+    )
+
+
+def dewildcard(python_file, do_write=False, single_line=False, relative_to=False):
+    """
+    Does the parsing and replacement and returns a list of lines.
+    """
+    try:
+        open(python_file)
+        if do_write:
+            open(python_file, "a")
+    except IOError as e:
+        sys.stderr.write(str(e) + "\n")
+        sys.exit(1)
+
+    # There may be relative imports in the code we're looking at.
+    # We need to know the starting point for those relative links.
+    # This probably needs refining to get sys.path right.
+    if relative_to:
+        sys.path.insert(0, ".")
+        base_pkg = relative_to  # importlib.import_module(relative_to).__name__
+    else:
+        base_pkg = None
+
+    import_all_re = re.compile(r"^\s*from\s*([\w.]*)\s*import\s*[*]")
+    parsed_lines = []
+    with open(python_file) as f:
+        for i, line in enumerate(f):
+            match = import_all_re.match(line)
+            if match:
+                try:
+                    line = import_all_string(match.group(1), single_line, base_pkg)
+                except:
+                    print(
+                        "ERROR occured while parsing: {}, line {}".format(
+                            python_file, i
+                        )
+                    )
+                    print(" {}".format(line.splitlines()[0]))
+                    print(" matching group: >>{}<<".format(match.group(1)))
+                    print("")
+                    raise
+            parsed_lines.append(line)
+    return parsed_lines
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("file", help="input file")
+    parser.add_argument(
+        "-w", "--write", action="store_true", help="write in place instead of stdout"
+    )
+    parser.add_argument(
+        "--single-line", action="store_true", help="write imports on a single line"
+    )
+    parser.add_argument(
+        "--relative_to",
+        help="import the given package and use it as the base for relative imports",
+    )
+    args = parser.parse_args()
+
+    parsed_lines = dewildcard(args.file, args.write, args.single_line, args.relative_to)
+
+    dest = open(args.file, "w") if args.write else sys.stdout
+    dest.writelines(parsed_lines)
+    dest.close()
+
+
+if __name__ == "__main__":
+    main()

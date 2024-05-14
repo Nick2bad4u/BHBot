@@ -6,7 +6,44 @@ import win32api
 import win32con
 import win32gui
 
-from utils import *
+from utils import (
+    Client,
+    ClientConfig,
+    MyFileHandler,
+    MyFormatter,
+    MyStreamHandler,
+    Path,
+    Settings,
+    Sg,
+    box,
+    ceil,
+    chunks,
+    compare,
+    copy,
+    datetime,
+    excepthook,
+    floor,
+    format_time,
+    get_font_name,
+    get_menu_pixels,
+    get_rotation,
+    get_text,
+    global_settings,
+    hdlr,
+    importlib,
+    json,
+    load_font,
+    log,
+    logger,
+    logging,
+    my_emit,
+    os,
+    requests,
+    rfh,
+    set_text,
+    sys,
+    timedelta,
+)
 
 MAP_VSC_TO_VK = 1
 MAP_VK_TO_CHAR = 2
