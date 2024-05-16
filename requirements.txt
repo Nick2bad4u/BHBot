@@ -51,7 +51,7 @@ pefile==2023.2.7
 pickleshare==0.7.5
 pillow==10.3.0
 pip==24.0
-platformdirs==4.2.1
+platformdirs==4.2.2
 prompt-toolkit==3.0.43
 psutil==5.9.8
 pure-eval==0.2.2
@@ -70,7 +70,7 @@ pywin32==306
 pywin32-ctypes==0.2.2
 pyzmq==26.0.3
 referencing==0.35.1
-regex==2024.5.10
+regex==2024.5.15
 requests==2.31.0
 rpds-py==0.18.1
 rsa==4.9
@@ -89,4 +89,4 @@ whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.9
 zope.event==5.0
-zope.interface==6.3
+zope.interface==6.4
