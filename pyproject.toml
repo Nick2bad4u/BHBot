@@ -1,2 +1,4 @@
 [tool.black]
 target-version = ["py311"]
+[tool.bandit]
+skips = ["B404"]
