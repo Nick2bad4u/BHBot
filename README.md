@@ -44,7 +44,20 @@ While it is not designed to, it may potentially lead to unforeseen outcomes, inc
 (Bot has been tested by multiple people for over 3,000 hours without issue as of 4/18/2024)
 
 # Installation
-Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHBot/releases)
+- Latest release can always be downloaded [here](https://github.com/Nick2bad4u/BHBot/releases) I recommend using the .exe version if you are not experienced with Python.
+- If you have issues running the .exe version, try to download the [source code directly](https://github.com/Nick2bad4u/BHBot/archive/refs/tags/BHBOT.zip) then run gui.pyw or gui.py.
+- If you double click and nothing happens, try to open PowerShell or Command Prompt and navigate to the source code folder you downloaded and run it:
+	- You can use the following command to change directories in Command Prompt or PowerShell:
+		- ``cd C:\your\sourcecode\folder\here``
+	- Then type``gui.pyw`` or ``gui.py``
+- If you still cannot get the bot started or running, make sure you have python installed. I recommend [Python 3.11.8](https://www.python.org/downloads/release/python-3118/), but [any version after](https://www.python.org/downloads/) should work.
+- If the bot is still not working, open Windows Powershell or Command Prompt and change directory to the source code folder you downloaded (You need to unzip it). 
+	- You can use the following command to change directories in Command Prompt or PowerShell:
+		- ``cd C:\your\sourcecode\folder\here``
+	- Once you are in the proper directory, type the following:
+		- ``pip install -r requirements.txt``
+			- This will install the proper dependencies for the bot to run. 
+			- This isn't needed in most cases but I've seen a few users who need to do this in order to get the bot running. *Not sure why as of now. :|*
 
 # Features
 
