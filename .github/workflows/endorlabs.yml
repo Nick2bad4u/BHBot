@@ -11,6 +11,9 @@ on:
     branches: [ "main" ]
   schedule:
     - cron: '39 0 * * 4'
+permissions:
+  contents: read
+
 jobs:
   scan:
     permissions:
@@ -20,8 +23,13 @@ jobs:
       id-token: write # Used for keyless authentication to Endor Labs
     runs-on: windows-latest
     steps:
+    - name: Harden Runner
+      uses: step-security/harden-runner@a4aa98b93cab29d9b1101a6143fb8bce00e2eac4 # v2.7.1
+      with:
+        egress-policy: audit
+
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
     #### Package Build Instructions
     ### Use this section to define the build steps used by your software package.
     ### Endor Labs builds your software for you where possible but the required build tools must be made available.
