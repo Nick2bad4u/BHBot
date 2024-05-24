@@ -1,7 +1,9 @@
 name: black-formatter
 
 on: [push, pull_request]
-
+permissions:
+  contents: read
+  
 jobs:
   black-linter:
     runs-on: ubuntu-latest
