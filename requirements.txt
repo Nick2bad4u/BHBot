@@ -22,7 +22,7 @@ dsdev-utils==1.3.0
 Eel==1.0.0a1
 executing==2.0.1
 fastjsonschema==2.19.1
-fonttools==4.51.0
+fonttools==4.52.1
 future==1.0.0
 gevent==24.2.1
 gevent-websocket==0.10.1
@@ -89,4 +89,4 @@ whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.9
 zope.event==5.0
-zope.interface==6.4.post1
+zope.interface==6.4.post2
