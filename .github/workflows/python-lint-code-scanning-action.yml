@@ -20,5 +20,5 @@ jobs:
     steps:
       - run: advanced-security/python-lint-code-scanning-action@v1
         with:
-          linter: ${{ matrix.linter }}
+          linter: [flake8, pylint, ruff, mypy, pytype, pyright, fixit, pyre]
           
