@@ -1,4 +1,4 @@
-            - name: Python Lint Code Scanning Action
+name: Python Lint Code Scanning Action
   # You may pin to the exact commit or the version.
   # uses: advanced-security/python-lint-code-scanning-action@e5446e09fc7d49dd4a1290193d45a41ee72a0a40
 jobs:
