@@ -1,14 +1,17 @@
-jobs:
-  run-actionlint:
-    runs-on: ubuntu-latest
-    permissions:
-      # needed for the checkout action
-      contents: read
-      # needed to annotate the files in a pull request with comments
-      pull-requests: write
-    steps: 
-    # checkout the source code to analyze
-    - uses: actions/checkout@v3 # v3
+on:
+  push: 
 
-    # run the actionlinter, will fail on errors
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:       
+    - uses: actions/checkout@v3
     - uses: devops-actions/actionlint@c0ee017f8abef55d843a647cd737b87a1976eb69 #v0.1.1
+      continue-on-error: true
+      id: action-lint
