@@ -1,0 +1,16 @@
+            - name: Python Lint Code Scanning Action
+  # You may pin to the exact commit or the version.
+  # uses: advanced-security/python-lint-code-scanning-action@e5446e09fc7d49dd4a1290193d45a41ee72a0a40
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        linter: [flake8, pylint, ruff, mypy, pytype, pyright, fixit, pyre]
+        python-version: [3.11]
+    steps:
+      - run: python3 -mpip install flake8-bugbear
+      - use: advanced-security/python-lint-code-scanning-action@v1
+        with:
+          linter: ${{ matrix.linter }}
+          
