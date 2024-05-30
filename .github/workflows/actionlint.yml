@@ -1,3 +1,4 @@
+name: ActionLint
 on:
   push: 
 
