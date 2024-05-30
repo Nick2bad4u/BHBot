@@ -18,7 +18,6 @@ jobs:
         linter: [flake8, pylint, ruff, mypy, pytype, pyright, fixit, pyre]
         python-version: [3.11]
     steps:
-      - run: python3 -mpip install flake8-bugbear
       - use: advanced-security/python-lint-code-scanning-action@v1
         with:
           linter: ${{ matrix.linter }}
