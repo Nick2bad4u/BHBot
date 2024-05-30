@@ -21,6 +21,7 @@
 [![Upload Python Package](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml)
 [![black-formatter](https://github.com/Nick2bad4u/BHBot/actions/workflows/black.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/black.yml)
 [![OSV-Scanner](https://github.com/Nick2bad4u/BHBot/actions/workflows/osv-scanner.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/osv-scanner.yml)
+[![FileDiff](https://github.com/Nick2bad4u/BHBot/actions/workflows/filediff.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/filediff.yml)
 
 # BHBot
 
