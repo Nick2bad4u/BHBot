@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:       
     - uses: actions/checkout@v3
-    - uses: devops-actions/actionlint@c0ee017f8abef55d843a647cd737b87a1976eb69 #v0.1.1
+    - uses: devops-actions/actionlint@48ca80d7da4ffd5ed31b7981702bc6bb4b242c63 #v0.1.2
       continue-on-error: true
       id: action-lint
