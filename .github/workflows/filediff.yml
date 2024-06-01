@@ -5,7 +5,7 @@ on:
 jobs:
   filediff:
     name: filediff
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout default branch
         uses: actions/checkout@v4
