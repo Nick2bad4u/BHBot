@@ -38,7 +38,20 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@f086349bfa2bd1361f7909c78558e816508cdc10 # v2.8.0
         with:
-          egress-policy: audit
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            azure.archive.ubuntu.com:80
+            download.camlcity.org:80
+            erratique.ch:443
+            files.pythonhosted.org:443
+            github.com:443
+            gitlab.inria.fr:443
+            objects.githubusercontent.com:443
+            ocaml.janestreet.com:443
+            opam.ocaml.org:443
+            ppa.launchpadcontent.net:443
+            pypi.org:443
 
       - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
