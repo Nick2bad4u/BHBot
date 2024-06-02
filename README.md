@@ -31,6 +31,8 @@ Gold/XP farming bot for Brawlhalla
 
 Heavily inspired by [BrawlhallaEZ](https://github.com/jamunano/BrawlhallaEZ)
 
+### **WARNING:** The software only works on Windows 64 bit versions. No other Operating Systems are supported.
+
 ### -------------------------------------------------------------------
 
 ### BOT IS BACK TO BEING ACTIVELY MAINTAINED!
