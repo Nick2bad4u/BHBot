@@ -25,7 +25,7 @@ jobs:
 
     - name: Generate the sitemap
       id: sitemap
-      uses: cicirello/generate-sitemap@63643192a20862580b2e628ce0e553a8907e9ee9 # v1.10.0
+      uses: cicirello/generate-sitemap@eb8db82126ee30619883c8c43e8c49ec14ebd6dc # v1.10.1
       with:
         base-url-path: https://github.typpi.online
 
