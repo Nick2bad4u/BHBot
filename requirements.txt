@@ -43,7 +43,7 @@ mistune==3.0.2
 nbclient==0.10.0
 nbconvert==7.16.4
 nbformat==5.10.4
-packaging==24.0
+packaging==24.1
 pandocfilters==1.5.1
 parso==0.8.4
 pbr==6.0.0
@@ -52,14 +52,14 @@ pickleshare==0.7.5
 pillow==10.3.0
 pip==24.0
 platformdirs==4.2.2
-prompt-toolkit==3.0.46
+prompt-toolkit==3.0.47
 psutil==5.9.8
 pure-eval==0.2.2
 pyasn1==0.6.0
 pycparser==2.22
 Pygments==2.18.0
-pyinstaller==6.7.0
-pyinstaller-hooks-contrib==2024.6
+pyinstaller==6.8.0
+pyinstaller-hooks-contrib==2024.7
 PyNaCl==1.5.0
 pyparsing==3.1.2
 pypiwin32==223
