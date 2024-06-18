@@ -53,7 +53,7 @@ pillow==10.3.0
 pip==24.0
 platformdirs==4.2.2
 prompt-toolkit==3.0.47
-psutil==5.9.8
+psutil==6.0.0
 pure-eval==0.2.2
 pyasn1==0.6.0
 pycparser==2.22
