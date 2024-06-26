@@ -2,7 +2,7 @@ altgraph==0.17.4
 appdirs==1.4.4
 asttokens==2.4.1
 attrs==23.2.0
-auto-py-to-exe==2.44.0
+auto-py-to-exe==2.44.1
 backcall==0.2.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
@@ -50,7 +50,7 @@ pbr==6.0.0
 pefile==2023.2.7
 pickleshare==0.7.5
 pillow==10.3.0
-pip==24.1
+pip==24.1.1
 platformdirs==4.2.2
 prompt-toolkit==3.0.47
 psutil==6.0.0
@@ -74,7 +74,7 @@ regex==2024.5.15
 requests==2.32.3
 rpds-py==0.18.1
 rsa==4.9
-setuptools==70.1.0
+setuptools==70.1.1
 six==1.16.0
 soupsieve==2.5
 stack-data==0.6.3
