@@ -120,6 +120,7 @@ characters = [
     "loki",
     "seven",
     "vivi",
+    "imugi",
 ]
 
 level_character_matrix_width = 15
