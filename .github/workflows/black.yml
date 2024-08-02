@@ -19,4 +19,4 @@ jobs:
             pypi.org:443
 
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
-      - uses: psf/black@3702ba224ecffbcec30af640c149f231d90aebdb # stable
+      - uses: psf/black@b965c2a5026f8ba399283ba3e01898b012853c79 # stable
