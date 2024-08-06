@@ -1,7 +1,7 @@
 altgraph==0.17.4
 appdirs==1.4.4
 asttokens==2.4.1
-attrs==23.2.0
+attrs==24.1.0
 auto-py-to-exe==2.44.1
 backcall==0.2.0
 beautifulsoup4==4.12.3
@@ -68,7 +68,7 @@ python-dateutil==2.9.0.post0
 PyUpdater==4.0
 pywin32==306
 pywin32-ctypes==0.2.2
-pyzmq==26.0.3
+pyzmq==26.1.0
 referencing==0.35.1
 regex==2024.7.24
 requests==2.32.3
@@ -84,7 +84,7 @@ traitlets==5.14.3
 wakepy==0.9.1
 wcwidth==0.2.13
 webencodings==0.5.1
-wheel==0.43.0
+wheel==0.44.0
 whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.9
