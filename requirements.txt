@@ -1,7 +1,7 @@
 altgraph==0.17.4
 appdirs==1.4.4
 asttokens==2.4.1
-attrs==24.1.0
+attrs==24.2.0
 auto-py-to-exe==2.44.1
 backcall==0.2.0
 beautifulsoup4==4.12.3
@@ -10,7 +10,7 @@ bottle==0.12.25
 bottle-websocket==0.2.9
 bsdiff4==1.2.4
 certifi==2024.7.4
-cffi==1.16.0
+cffi==1.17.0
 chardet==5.2.0
 charset-normalizer==3.3.2
 colorama==0.4.6
@@ -72,7 +72,7 @@ pyzmq==26.1.0
 referencing==0.35.1
 regex==2024.7.24
 requests==2.32.3
-rpds-py==0.19.1
+rpds-py==0.20.0
 rsa==4.9
 setuptools==72.1.0
 six==1.16.0
@@ -89,5 +89,5 @@ whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.9
 zope.event==5.0
-zope.interface==6.4.post2
+zope.interface==7.0.1
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
