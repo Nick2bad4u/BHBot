@@ -87,7 +87,7 @@ webencodings==0.5.1
 wheel==0.44.0
 whichcraft==0.6.1
 wrapt==1.16.0
-yarg==0.1.9
+yarg==0.1.10
 zope.event==5.0
 zope.interface==7.0.1
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
