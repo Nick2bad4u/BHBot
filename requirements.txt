@@ -67,7 +67,7 @@ PySimpleGUI==5.0.6
 python-dateutil==2.9.0.post0
 PyUpdater==4.0
 pywin32==306
-pywin32-ctypes==0.2.2
+pywin32-ctypes==0.2.3
 pyzmq==26.1.0
 referencing==0.35.1
 regex==2024.7.24
