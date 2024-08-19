@@ -68,13 +68,13 @@ python-dateutil==2.9.0.post0
 PyUpdater==4.0
 pywin32==306
 pywin32-ctypes==0.2.3
-pyzmq==26.1.0
+pyzmq==26.1.1
 referencing==0.35.1
 regex==2024.7.24
 requests==2.32.3
 rpds-py==0.20.0
 rsa==4.9
-setuptools==72.2.0
+setuptools==73.0.0
 six==1.16.0
 soupsieve==2.6
 stack-data==0.6.3
