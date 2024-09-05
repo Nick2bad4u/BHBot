@@ -6,11 +6,11 @@ auto-py-to-exe==2.44.1
 backcall==0.2.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
-bottle==0.12.25
+bottle==0.13.0
 bottle-websocket==0.2.9
 bsdiff4==1.2.4
 certifi==2024.8.30
-cffi==1.17.0
+cffi==1.17.1
 chardet==5.2.0
 charset-normalizer==3.3.2
 colorama==0.4.6
@@ -74,7 +74,7 @@ regex==2024.7.24
 requests==2.32.3
 rpds-py==0.20.0
 rsa==4.9
-setuptools==74.1.1
+setuptools==74.1.2
 six==1.16.0
 soupsieve==2.6
 stack-data==0.6.3
