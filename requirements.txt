@@ -26,7 +26,7 @@ fonttools==4.53.1
 future==1.0.0
 gevent==24.2.1
 gevent-websocket==0.10.1
-greenlet==3.0.3
+greenlet==3.1.0
 idna==3.8
 ipython==8.27.0
 jedi==0.19.1
@@ -55,7 +55,7 @@ platformdirs==4.3.2
 prompt-toolkit==3.0.47
 psutil==6.0.0
 pure-eval==0.2.3
-pyasn1==0.6.0
+pyasn1==0.6.1
 pycparser==2.22
 Pygments==2.18.0
 pyinstaller==6.10.0
