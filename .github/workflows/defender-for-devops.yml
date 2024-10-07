@@ -38,7 +38,7 @@ jobs:
       with:
         egress-policy: audit
 
-    - uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
+    - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
     - uses: actions/setup-dotnet@6bd8b7f7774af54e05809fcc5431931b3eb1ddee # v4.0.1
       with:
         dotnet-version: |
@@ -48,6 +48,6 @@ jobs:
       uses: microsoft/security-devops-action@73909114be534813fecb63c42f7f95bac57bcb14 # v1
       id: msdo
     - name: Upload results to Security tab
-      uses: github/codeql-action/upload-sarif@6db8d6351fd0be61f9ed8ebd12ccd35dcec51fea # v3.26.11
+      uses: github/codeql-action/upload-sarif@c36620d31ac7c881962c3d9dd939c40ec9434f2b # v3.26.12
       with:
         sarif_file: ${{ steps.msdo.outputs.sarifFile }}
