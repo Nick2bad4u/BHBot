@@ -2,7 +2,7 @@ altgraph==0.17.4
 appdirs==1.4.4
 asttokens==2.4.1
 attrs==24.2.0
-auto-py-to-exe==2.44.1
+auto-py-to-exe==2.44.2
 backcall==0.2.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
@@ -37,7 +37,7 @@ jupyter_client==8.6.3
 jupyter_core==5.7.2
 jupyterlab_pygments==0.3.0
 keyboard==0.13.5
-MarkupSafe==2.1.5
+MarkupSafe==3.0.0
 matplotlib-inline==0.1.7
 mistune==3.0.2
 nbclient==0.10.0
