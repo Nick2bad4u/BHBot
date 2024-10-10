@@ -8,7 +8,7 @@ beautifulsoup4==4.12.3
 bleach==6.1.0
 bottle==0.13.1
 bottle-websocket==0.2.9
-bsdiff4==1.2.4
+bsdiff4==1.2.5
 certifi==2024.8.30
 cffi==1.17.1
 chardet==5.2.0
@@ -24,7 +24,7 @@ executing==2.1.0
 fastjsonschema==2.20.0
 fonttools==4.54.1
 future==1.0.0
-gevent==24.2.1
+gevent==24.10.1
 gevent-websocket==0.10.1
 greenlet==3.1.1
 idna==3.10
@@ -89,5 +89,5 @@ whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.10
 zope.event==5.0
-zope.interface==7.0.3
+zope.interface==7.1.0
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
