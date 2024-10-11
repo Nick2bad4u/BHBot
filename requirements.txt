@@ -24,7 +24,7 @@ executing==2.1.0
 fastjsonschema==2.20.0
 fonttools==4.54.1
 future==1.0.0
-gevent==24.10.1
+gevent==24.10.2
 gevent-websocket==0.10.1
 greenlet==3.1.1
 idna==3.10
