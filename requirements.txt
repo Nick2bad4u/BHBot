@@ -6,7 +6,7 @@ auto-py-to-exe==2.44.2
 backcall==0.2.0
 beautifulsoup4==4.12.3
 bleach==6.1.0
-bottle==0.13.1
+bottle==0.13.2
 bottle-websocket==0.2.9
 bsdiff4==1.2.5
 certifi==2024.8.30
@@ -61,12 +61,12 @@ Pygments==2.18.0
 pyinstaller==6.10.0
 pyinstaller-hooks-contrib==2024.8
 PyNaCl==1.5.0
-pyparsing==3.1.4
+pyparsing==3.2.0
 pypiwin32==223
 PySimpleGUI==5.0.6
 python-dateutil==2.9.0.post0
 PyUpdater==4.0
-pywin32==307
+pywin32==308
 pywin32-ctypes==0.2.3
 pyzmq==26.2.0
 referencing==0.35.1
