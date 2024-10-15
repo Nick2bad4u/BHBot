@@ -1,6 +1,7 @@
 remote_theme: pages-themes/midnight@v0.2.0
 title: Brawlhalla BH Bot
-description: Brawlhalla Bot Page
+description: Brawlhalla Bot and Gold Farmer and Powerleveling for Brawlhalla. AFK farms gold and XP for any or every Brawlhalla legend.
 url: "https://github.typpi.online" # the base hostname & protocol for your site
+github_username:  nick2bad4u
 plugins:
   - jekyll-sitemap
