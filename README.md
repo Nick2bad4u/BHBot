@@ -22,6 +22,7 @@
 [![black-formatter](https://github.com/Nick2bad4u/BHBot/actions/workflows/black.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/black.yml)
 [![OSV-Scanner](https://github.com/Nick2bad4u/BHBot/actions/workflows/osv-scanner.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/osv-scanner.yml)
 [![ActionLint](https://github.com/Nick2bad4u/BHBot/actions/workflows/actionlint.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/actionlint.yml)
+![RepoBeats](https://repobeats.axiom.co/api/embed/63c2dd1816ca11717e88c77995290b30b0b7feaf.svg "Repobeats analytics image")
 
 # BHBot
 
