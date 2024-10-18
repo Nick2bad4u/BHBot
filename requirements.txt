@@ -24,7 +24,7 @@ executing==2.1.0
 fastjsonschema==2.20.0
 fonttools==4.54.1
 future==1.0.0
-gevent==24.10.2
+gevent==24.10.3
 gevent-websocket==0.10.1
 greenlet==3.1.1
 idna==3.10
@@ -37,7 +37,7 @@ jupyter_client==8.6.3
 jupyter_core==5.7.2
 jupyterlab_pygments==0.3.0
 keyboard==0.13.5
-MarkupSafe==3.0.1
+MarkupSafe==3.0.2
 matplotlib-inline==0.1.7
 mistune==3.0.2
 nbclient==0.10.0
