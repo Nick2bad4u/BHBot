@@ -5,7 +5,7 @@ attrs==24.2.0
 auto-py-to-exe==2.44.2
 backcall==0.2.0
 beautifulsoup4==4.12.3
-bleach==6.1.0
+bleach==6.2.0
 bottle==0.13.2
 bottle-websocket==0.2.9
 bsdiff4==1.2.5
@@ -74,7 +74,7 @@ regex==2024.9.11
 requests==2.32.3
 rpds-py==0.20.0
 rsa==4.9
-setuptools==75.2.0
+setuptools==75.3.0
 six==1.16.0
 soupsieve==2.6
 stack-data==0.6.3
