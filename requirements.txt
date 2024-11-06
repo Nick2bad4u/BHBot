@@ -70,9 +70,9 @@ pywin32==308
 pywin32-ctypes==0.2.3
 pyzmq==26.2.0
 referencing==0.35.1
-regex==2024.9.11
+regex==2024.11.6
 requests==2.32.3
-rpds-py==0.20.1
+rpds-py==0.21.0
 rsa==4.9
 setuptools==75.3.0
 six==1.16.0
