@@ -43,7 +43,7 @@ mistune==3.0.2
 nbclient==0.10.0
 nbconvert==7.16.4
 nbformat==5.10.4
-packaging==24.1
+packaging==24.2
 pandocfilters==1.5.1
 parso==0.8.4
 pbr==6.1.0
@@ -84,7 +84,7 @@ traitlets==5.14.3
 wakepy==0.10.1
 wcwidth==0.2.13
 webencodings==0.5.1
-wheel==0.44.0
+wheel==0.45.0
 whichcraft==0.6.1
 wrapt==1.16.0
 yarg==0.1.10
