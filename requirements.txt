@@ -24,12 +24,12 @@ executing==2.1.0
 fastjsonschema==2.20.0
 fonttools==4.54.1
 future==1.0.0
-gevent==24.10.3
+gevent==24.11.1
 gevent-websocket==0.10.1
 greenlet==3.1.1
 idna==3.10
 ipython==8.29.0
-jedi==0.19.1
+jedi==0.19.2
 Jinja2==3.1.4
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
@@ -58,8 +58,8 @@ pure-eval==0.2.3
 pyasn1==0.6.1
 pycparser==2.22
 Pygments==2.18.0
-pyinstaller==6.11.0
-pyinstaller-hooks-contrib==2024.9
+pyinstaller==6.11.1
+pyinstaller-hooks-contrib==2024.10
 PyNaCl==1.5.0
 pyparsing==3.2.0
 pypiwin32==223
@@ -74,7 +74,7 @@ regex==2024.11.6
 requests==2.32.3
 rpds-py==0.21.0
 rsa==4.9
-setuptools==75.3.0
+setuptools==75.4.0
 six==1.16.0
 soupsieve==2.6
 stack-data==0.6.3
