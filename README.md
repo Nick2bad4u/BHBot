@@ -1,28 +1,11 @@
-[![Lint Code Base](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/super-linter.yml)
-[![Bandit](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/bandit.yml)
-[![Flake8](https://i.gyazo.com/3ff00dbb983f8c3d74420e7de9650145.png)](https://flake8.pycqa.org/en/latest/)
-[![PyTest](https://i.gyazo.com/75038b4c1a4a490a7a25f34a2ae998a6.png)](https://docs.pytest.org/en/8.2.x/)
-[![CodeQL](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/codeql.yml)
-[![Dependabot Updates](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependabot/dependabot-updates)
-[![Dependency review](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/dependency-review.yml)
-[![DevSkim](https://github.com/Nick2bad4u/BHBot/actions/workflows/devskim.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/devskim.yml)
-[![Generate xml sitemap](https://github.com/Nick2bad4u/BHBot/actions/workflows/sitemap.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sitemap.yml)
-[![Greetings](https://github.com/Nick2bad4u/BHBot/actions/workflows/greetings.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/greetings.yml)
-[![Mark stale issues and pull requests](https://github.com/Nick2bad4u/BHBot/actions/workflows/stale.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/stale.yml)
-[![Microsoft Defender For Devops](https://github.com/Nick2bad4u/BHBot/actions/workflows/defender-for-devops.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/defender-for-devops.yml)
-[![OSSAR](https://github.com/Nick2bad4u/BHBot/actions/workflows/ossar.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/ossar.yml)
-[![pages-build-deployment](https://github.com/Nick2bad4u/BHBot/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/pages/pages-build-deployment)
-[![Pylint](https://github.com/Nick2bad4u/BHBot/actions/workflows/pylint.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/pylint.yml)
-[![Python application](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-app.yml)
-[![Python Package using Conda](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-package-conda.yml)
-[![Scorecard supply-chain security](https://github.com/Nick2bad4u/BHBot/actions/workflows/scorecard.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/scorecard.yml)
-[![Semgrep](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/semgrep.yml)
-[![Sobelow](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/sobelow.yml)
-[![Upload Python Package](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/python-publish.yml)
-[![black-formatter](https://github.com/Nick2bad4u/BHBot/actions/workflows/black.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/black.yml)
-[![OSV-Scanner](https://github.com/Nick2bad4u/BHBot/actions/workflows/osv-scanner.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/osv-scanner.yml)
-[![ActionLint](https://github.com/Nick2bad4u/BHBot/actions/workflows/actionlint.yml/badge.svg)](https://github.com/Nick2bad4u/BHBot/actions/workflows/actionlint.yml)
-![RepoBeats](https://repobeats.axiom.co/api/embed/63c2dd1816ca11717e88c77995290b30b0b7feaf.svg "Repobeats analytics image")
+> ⚠️ **Project Closed - Move to PRAWL! — Please Read**
+>
+> This repository is no longer the active.
+> Active development on another BHBOT type program continues at **https://github.com/phruut/prawl**.  
+> Please update your bookmarks and submit issues or PRs there instead.
+> Do NOT pay for any Brawlhalla bots as they are most likely scams.
+>
+> ⚠️ **Project Closed - Move to PRAWL! — Please Read**
 
 # BHBot
 
