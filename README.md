@@ -1,8 +1,11 @@
 > ⚠️ **Project Closed - Move to PRAWL! — Please Read**
 >
 > This repository is no longer active.
-> Active development on another BHBOT type program continues at **https://github.com/phruut/prawl**.  
+> 
+> Active development on another BHBOT type program continues at **https://github.com/phruut/prawl**.
+> 
 > Please update your bookmarks and submit issues or PRs there instead.
+> 
 > Do NOT pay for any Brawlhalla bots as they are most likely scams.
 >
 > ⚠️ **Project Closed - Move to PRAWL! — Please Read**
